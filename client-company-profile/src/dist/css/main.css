@@ -1,3 +1,145 @@
 *{
     font-family: "Poppins", sans-serif;
 }
+:root {
+    --primary-color: #f6f8fd;
+    --secondary-color: #dc3545;
+    --color-text: #ffffff;
+    --navbar-color: #ffffff;
+    --navbar-color-text: #000000;
+  }
+/*style homepage*/
+header {
+    background: linear-gradient(113deg, rgba(26, 29, 28, 0.5), rgba(237, 19, 19, 0.84) 165.36%), url('../../assets/img/homepage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Set the opacity by adjusting the fourth value (0.5 in this case) */
+  }
+.homepage .header-box h1{
+    font-size: 1.9rem;
+    font-weight: 100;
+    font-weight: bold;
+    color: var(--color-text);
+}
+.homepage .header-box p{
+    line-height: 2;
+    color: var(--color-text);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.homepage .header-box img{
+    width: 100%;
+}
+/**/
+
+
+
+
+
+
+
+
+
+/*Style footer*/
+  .footer .row:nth-child(1) .col:nth-child(1) h5{
+    color: var(--color-text);
+  }
+  .footer .row:nth-child(1) .col:nth-child(1) .desc{
+    color: var(--color-text);
+    line-height: 2;
+    font-size: 8px ;
+  }
+  .footer .social{
+    display: flex;
+    gap: 10px;
+  }
+  .footer .social i{
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0,3s ease;
+    -webkit-transition: all 0,3s ease;
+    -moz-transition:all 0,3s ease ;
+    -ms-transition:all 0,3s ease ;
+    -o-transition:all 0,3s ease ;
+  }
+  .footer .social i:hover{
+    color: var(--secondary-color);
+  }
+  .footer .row:nth-child(2){
+    margin-top: 50px;
+  }
+
+.footer {
+  background-color: #f8f9fa;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+}
+
+.company-logo {
+  margin-right: 15px;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.company-info h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.company-info p {
+  color: #6c757d;
+}
+
+.social i {
+  margin-right: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .company-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .company-logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .company-info h5 {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width:992){
+    .homepage .header-box{
+        padding-top: 7rem;
+    }
+}
+@media screen and (max-width:575){
+    .homepage .header-box h1{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:475){
+    .homepage .header-box h1{
+        font-size: 2rem;
+    }
+    .homepage .header-box p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:300){
+    .homepage .header-box h1{
+        font-size: 2rem;
+    }
+    .homepage .header-box p{
+        font-size: 12px;
+    }
+}
+
