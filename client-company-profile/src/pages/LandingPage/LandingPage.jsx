@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Row,Col, Container } from 'react-bootstrap'
 
-import logo from '../../../public/logo192.png'
+import logo from '../../assets/img/logo.png'
 
 export default class LandingPage extends Component {
   render() {

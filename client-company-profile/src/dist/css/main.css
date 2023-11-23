@@ -1,3 +1,5 @@
+/* Ansor */
+
 *{
     font-family: "Poppins", sans-serif;
 }
@@ -143,3 +145,115 @@ header {
     }
 }
 
+/* Ansor */
+
+/* Binsar */
+
+* {
+  font-family: "Poppins";
+}
+
+.navbar {
+  position: absolute;
+  padding: 15px 0 15px 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.navbar .nav-link a {
+  padding: 15px 20px 15px 20px;
+  margin-left: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .nav-link a:hover {
+  color: red;
+}
+
+.navbar .nav-link .active {
+  color: red;
+}
+
+.navbar .nav-link .dropdown-item {
+  color: black;
+}
+
+.layanan-page {
+  padding-top: 8rem;
+  background: linear-gradient(rgba(56, 56, 56, 0.801), rgba(59, 53, 53, 0.829)),
+    url(../../assets/img/bg-picture.png);
+  background-color: aqua;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.layanan-page .title-layanan {
+  width: 400px;
+}
+
+.layanan-page .main-content {
+  margin-top: 50px;
+  text-align: justify;
+}
+
+.kenapa-kami-page .header {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(rgba(56, 56, 56, 0.973), rgba(59, 53, 53, 0.979)),
+    url(../../assets/img/bg-picture.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.kenapa-kami-page .header .title-kenapa-kami {
+  display: flex;
+}
+
+.kenapa-kami-page .header .col-element {
+  text-align: justify;
+  margin-top: 15px;
+}
+
+.kenapa-kami-page .main {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(#656263, #4D4D4D);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar .nav-link a {
+    background-color: white;
+    z-index: 2;
+    position: relative;
+    color: black;
+  }
+
+  .layanan-page .title-layanan {
+    width: 250px;
+  }
+
+  .layanan-page .main-content .col-element {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .kenapa-kami-page .header .title-kenapa-kami {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kenapa-kami-page .header .col-element {
+    text-align: justify;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
