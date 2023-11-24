@@ -227,7 +227,7 @@ header {
   background-position: center center;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 720px) {
   .navbar .nav-link a {
     background-color: white;
     z-index: 2;
