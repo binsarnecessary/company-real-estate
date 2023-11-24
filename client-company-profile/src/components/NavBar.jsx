@@ -23,7 +23,7 @@ export const NavBar = () => {
 
 
   return (
-    <Navbar expand="lg" className={isHidden ? 'navbar-hidden' : ""}>
+    <Navbar expand="md" className={isHidden ? 'navbar-hidden' : ""}>
       <Container>
         <Navbar.Brand href="/">
           <Image src={Logo} />
