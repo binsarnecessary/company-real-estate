@@ -191,7 +191,7 @@ video {
 
 /*---------about-------------*/
 .about {
-  background-color: black;
+  background-color: white;
 }
 
 .grid3 {
@@ -378,7 +378,7 @@ label {
 }
 
 .contact {
-  margin: 20px 0;
+  padding-top: 30px;
 }
 .contact .right,
 .contact .left {

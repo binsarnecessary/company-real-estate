@@ -95,6 +95,8 @@ nav ul li a:hover::before {
 .color-active {
   padding: 15px 0 15px 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.548);
+  background-color: rgb(128, 128, 128);
+  z-index: 9999;
 }
 
 .about-page {
@@ -110,17 +112,196 @@ nav ul li a:hover::before {
   margin-top: -150px; /* Adjust the negative margin based on your preference */
 }
 
-.layanan-page .title-layanan {
-  width: 400px;
+.contact {
+  background-color: grey;
 }
 
-.layanan-page .main-content {
-  margin-top: 50px;
+.about-our-vision {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.774), rgba(26, 23, 23, 0.815)),
+    url(../../components/data/images/vision.webp);
+  object-fit: contain;
+}
+
+.about-our-vision .title-vision {
+  color: rgb(128, 124, 124);
+}
+
+.about-our-vision .main-vision {
+  letter-spacing: 2px;
+  text-align: justify;
+  font-style: bold;
+}
+
+.about-our-mission h6 {
   text-align: justify;
 }
 
+.about-our-client {
+  border-top: 1px solid rgba(37, 34, 34, 0.842);
+}
+
+.contact-page {
+  padding-top: 20%;
+  background: linear-gradient(rgba(46, 45, 45, 0.826), rgba(45, 40, 40, 0.782)),
+    url(../../components/data/images/contact-us-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.contact-page .title-contact {
+  margin-top: -70px;
+}
+
+.slider-contact .card {
+  margin-right: 40px;
+  cursor: pointer; /* Mengubah kursor menjadi tangan */
+  overflow: hidden;
+}
+
+.slider-contact .card .card-bg {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Menyusun elemen child di tengah vertikal */
+  align-items: center; /* Menyusun elemen child di tengah horizontal */
+}
+
+.slider-contact .card .card-bg .card-body {
+  margin-top: 350px;
+}
+
+.banner-contact {
+  padding-top: 30%;
+  background: linear-gradient(rgba(56, 56, 56, 0.726), rgba(59, 53, 53, 0.699)),
+    url(../../components/data/images/banner-contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.banner-contact .title {
+  margin-top: -80px;
+}
+
+/* Button Custom */
+.custom-button {
+  background-color: white; /* Warna latar belakang putih */
+  color: black; /* Warna teks hitam */
+  font-size: 1.2em; /* Ukuran huruf sedikit lebih besar */
+  border: 1px solid black; /* Border 1 piksel solid hitam */
+  padding: 10px 20px; /* Padding 10 piksel atas/bawah, 20 piksel kiri/kanan */
+
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: black; /* Warna latar belakang hitam saat dihover */
+  color: white; /* Warna teks putih saat dihover */
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slider-logo {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.slider-logo:before,
+.slider-logo:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.slider-logo:before {
+  left: 0;
+  background: linear-gradient(to left, transparent, rgb(255, 255, 255));
+}
+
+.slider-logo:after {
+  right: 0;
+  background: linear-gradient(to right, transparent, rgb(255, 255, 255));
+}
+
+.slider-logo .logos-slide {
+  display: inline-block;
+  animation: 45s slide infinite linear;
+}
+
+.slider-logo .logos-slide img {
+  height: 120px;
+  margin-right: 50px;
+}
+
 @media screen and (max-width: 720px) {
+  .about-page {
+    padding-top: 60%;
+    background: linear-gradient(
+        rgba(56, 56, 56, 0.726),
+        rgba(59, 53, 53, 0.699)
+      ),
+      url(../../components/data/images/think-bigger.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
   .about-page .title-about {
-    margin-top: -70px; /* Adjust the negative margin based on your preference */
+    margin-top: -80px; /* Adjust the negative margin based on your preference */
+  }
+
+  .about-our-vision {
+    margin-top: 40px;
+  }
+
+  .contact-page {
+    padding-top: 50%;
+    background: linear-gradient(
+        rgba(46, 45, 45, 0.826),
+        rgba(45, 40, 40, 0.782)
+      ),
+      url(../../components/data/images/contact-us-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .contact-page .title-contact {
+    margin-top: -60px;
+  }
+
+  .slider-contact .card .card-bg .card-body .card-text {
+    font-size: small;
+  }
+
+  .banner-contact {
+    padding-top: 50%;
+    background: linear-gradient(
+        rgba(56, 56, 56, 0.726),
+        rgba(59, 53, 53, 0.699)
+      ),
+      url(../../components/data/images/banner-contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }

@@ -1,4 +1,29 @@
-import { Settings, CropRotate, ViewInAr, AddLocationAltOutlined, PhoneIphone, EmailOutlined, Facebook, Twitter, Instagram, YouTube } from "@mui/icons-material"
+import {
+  Settings,
+  CropRotate,
+  ViewInAr,
+  AddLocationAltOutlined,
+  PhoneIphone,
+  EmailOutlined,
+  Facebook,
+  Twitter,
+  Instagram,
+  YouTube,
+} from "@mui/icons-material";
+
+import Logo1 from "./images/logoClient/dinpend-dki.jpg";
+import Logo2 from "./images/logoClient/cbre.png";
+import Logo3 from "./images/logoClient/ibm.png";
+import Logo4 from "./images/logoClient/jalesveva.png";
+import Logo5 from "./images/logoClient/kementrtian-kesehanatan.png";
+import Logo6 from "./images/logoClient/rsud-koja.webp";
+import Logo7 from "./images/logoClient/sman105-jkt.png";
+import Logo8 from "./images/logoClient/dispora.png";
+import Logo9 from "./images/logoClient/kominfo.webp";
+import Logo10 from "./images/logoClient/mblockmarket.png";
+import Logo11 from "./images/logoClient/sman12-jkt.png";
+import Logo12 from "./images/logoClient/sman91-jkt.png";
+import Logo13 from "./images/logoClient/sopii.png";
 
 export const navlink = [
   {
@@ -18,11 +43,10 @@ export const navlink = [
     text: "Contact",
   },
   {
-    url:"/client",
-    text:"Client"
+    url: "/client",
+    text: "Client",
   },
-
-]
+];
 export const home = [
   {
     text: "DORMA MADA PERKASA ",
@@ -30,13 +54,14 @@ export const home = [
     design: "Mechanical",
     desc: "Interiors",
   },
-]
+];
 export const about = [
   {
     desc: "PT Dorma Mada Perkasa is a company engaged in the procurement of goods and services. This includes building construction tools and materials, electricity management, office equipment, and others.PT Dorma Mada Perkasa was founded in 2022 and plays an active role in development in various sectors throughout the country. In this case, it is certainly not an easy thing, with various experiences and the learning process that has been passed over the years which has led the company to grow and develop in accordance with the company's strategic plan.",
-    desc1: "Building trust and commitment is the main key for the company to work, as well as motivating the team in designing, implementing and controlling projects using various management and construction methods that have been determined.As a manifestation of a series of learning processes and company experience through providing the best goods and services in creating more real work",
+    desc1:
+      "Building trust and commitment is the main key for the company to work, as well as motivating the team in designing, implementing and controlling projects using various management and construction methods that have been determined.As a manifestation of a series of learning processes and company experience through providing the best goods and services in creating more real work",
   },
-]
+];
 export const visi = [
   {
     id: 1,
@@ -48,7 +73,7 @@ export const visi = [
     title: " Misi ",
     desc: "PT Dorma Mada Perkasa provides goods procurement services which include electronic equipment, computers, printers, fingerprint absences, access doors, hospital cleaning equipment, sliding doors, CCTV, t-shirts, event equipment, telephone cable networks, etc.",
   },
-]
+];
 
 export const services = [
   {
@@ -69,7 +94,7 @@ export const services = [
     title: " Goods Procurement Services ",
     desc: "PT Dorma Mada Perkasa provides goods procurement services which include electronic equipment, computers, printers, fingerprint absences, access doors, hospital cleaning equipment, sliding doors, CCTV, t-shirts, event equipment, telephone cable networks, etc.",
   },
-]
+];
 export const client = [
   {
     id: 1,
@@ -89,7 +114,7 @@ export const client = [
     name: "Aldolinovil",
     post: "Direktur",
   },
-]
+];
 export const layanan = [
   {
     id: 1,
@@ -109,24 +134,25 @@ export const layanan = [
     desc: "PT Dorma Mada Perkasa memiliki komitmen yang tinggi untuk bekerja dan selalu berusaha untuk mengedepankan kepentingan klien. Kepercayaan yang diberikan oleh klien akan kita jaga guna membentuk hubungan yang harmonis.",
     cover: "./images/Kenapakami/3.jpg",
   },
-]
+];
 export const contact = [
   {
     icon: <AddLocationAltOutlined />,
-    text1: "2651 Main Street, Suit 124",
-    text2: "Seattle, WA, 98101",
+    text1: "Equity Tower Building 37th Floor",
+    text2:
+      "Jl. Jendral Sudirman Senayan, Kebayoran Baru, Jakarta Selatan, DKI Jakarta",
   },
   {
     icon: <PhoneIphone />,
-    text1: "0123456789",
-    text2: "0345627891",
+    text1: "+62 812-9859-7114",
+    text2: "",
   },
   {
     icon: <EmailOutlined />,
-    text1: "hello@thetheme.io",
-    text2: "inf0@brex-theme.io",
+    text1: "dormamadaperkasa@gmail.com",
+    text2: "ervanowijanarko@dorma",
   },
-]
+];
 export const social = [
   {
     icon: <Facebook />,
@@ -140,4 +166,47 @@ export const social = [
   {
     icon: <YouTube />,
   },
-]
+];
+
+export const logoClient = [
+  {
+    logo: Logo1,
+  },
+  {
+    logo: Logo2,
+  },
+  {
+    logo: Logo3,
+  },
+  {
+    logo: Logo4,
+  },
+  {
+    logo: Logo5,
+  },
+  {
+    logo: Logo6,
+  },
+  {
+    logo: Logo7,
+  },
+  {
+    logo: Logo8,
+  },
+  {
+    logo: Logo9,
+  },
+  {
+    logo: Logo10,
+  },
+  {
+    logo: Logo11,
+  },
+  {
+    logo: Logo12,
+  },
+  {
+    logo: Logo13,
+  },
+
+];

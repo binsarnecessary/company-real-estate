@@ -1,28 +1,95 @@
-import React from "react"
-import { Heading } from "../common/Heading"
-import { contact } from "../data/dummydata"
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+import { Heading } from "../common/Heading";
+import { contact } from "../data/dummydata";
 
 export const Contact = () => {
+  const form = useRef();
+  const unique = 1;
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_pgs31ns",
+        "template_ulc3y7d",
+        form.current,
+        "zCFH66PEAE7FCe5VO"
+      )
+      .then(
+        (result) => {
+          e.target.reset();
+          Swal.fire({
+            title: "Success!",
+            text: "Your Message Succes Send",
+            icon: "success",
+            confirmButtonText: "Ok",
+          });
+        },
+        (error) => {
+          Swal.fire({
+            title: "Failed!",
+            text: "Your Message Fail To Send",
+            icon: "error",
+            confirmButtonText: "Ok",
+          });
+        }
+      );
+  };
+
   return (
     <>
-      <div className='contact'>
-        <div className='container'>
-          <Heading title='Keep In Touch' />
-          <div className='content flexsb'>
-            <div className='right'>
-              <form>
-                <div className='flex'>
-                  <input type='text' placeholder='Name' data-aos='flip-left' />
-                  <input type='email' placeholder='Email' data-aos='flip-right' />
+      <div className="contact">
+        <div className="container">
+          <Heading title="Contact Us" />
+          <div className="content flexsb">
+            <div className="right">
+              <form ref={form} onSubmit={sendEmail}>
+                <div className="flex">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    name="user_name"
+                    data-aos="flip-left"
+                    required
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    data-aos="flip-right"
+                    name="user_email"
+                    required
+                  />
                 </div>
-                <input type='email' placeholder='Subject' data-aos='flip-up' />
-                <textarea name='' id='' cols='30' rows='10' data-aos='flip-down'></textarea>
-                <button data-aos='zoom-in-up'>Submit</button>
+                <textarea name="message" placeholder="Message" required />
+                <input
+                  type="submit"
+                  value="Submit"
+                  data-aos="zoom-in-up"
+                  style={{ backgroundColor: "orange" }}
+                />
               </form>
+            </div>
+
+            <div className="left">
+              <iframe
+                className="embed-responsive-item mt-2 ,l-3"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.1414209083714!2d106.80633342894563!3d-6.226389794431496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1505affffff%3A0x301b8a0f5d2c33ed!2sEquity%20Tower!5e0!3m2!1sen!2sid!4v1701348917358!5m2!1sen!2sid"
+                frameborder="0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+                height="250px"
+                width="400px"
+                key={unique}
+                title="Maps"
+              ></iframe>
             </div>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
