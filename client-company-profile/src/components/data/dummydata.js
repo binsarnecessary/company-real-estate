@@ -26,10 +26,9 @@ export const navlink = [
 export const home = [
   {
     text: "DORMA MADA PERKASA ",
-    name: "Pengadaan Barang",
-    post: "Konstruksi ",
-    design: "Mekanikal ",
-    desc: " Interior",
+    name: "Procurement and Construction ",
+    design: "Mechanical",
+    desc: "Interiors",
   },
 ]
 export const about = [

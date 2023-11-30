@@ -22,7 +22,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 a {
-  color: var(--greyDark);
   text-decoration: none;
   transition: 0.5s;
 }
@@ -30,7 +29,6 @@ a:hover {
   color: var(--primaryColor);
 }
 p {
-  color: var(--sliver);
   font-size: 15px;
   line-height: 30px;
   margin: 20px 0;
@@ -74,12 +72,11 @@ button {
 }
 .primaryBtn {
   background: none;
-  border: 2px solid var(--primaryColor);
+  border: 2px solid var(--white);
 }
 
 /*---------header-------------*/
 header {
-  background-color: var(--headingColor);
   height: 10vh;
   line-height: 10vh;
   position: sticky;
@@ -130,40 +127,49 @@ section {
 }
 
 /*---------hero-------------*/
-.hero {
+video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.main {
   position: relative;
 }
-.hero::after {
+
+.main::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../public/images/home-bg.png");
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: -1;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha (fourth parameter) for transparency */
+  z-index: 1; /* Ensure the overlay is above the video */
 }
-.heroContent {
-  max-width: 50%;
-  margin: auto;
+.bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Ensure the content is above the overlay */
+  /* Add your other styling for the content here */
+}
+.bg .heroContent{
   text-align: center;
 }
-.hero h1 {
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--primaryColor);
+.bg .heroContent h3{
+  color: var(--white);
 }
-
+.bg .heroContent h1{
+  color: var(--white);
+}
 /*---------hero-------------*/
 .heading {
   font-size: 30px;
-  color: var(--primaryColor);
   font-weight: 600;
   text-align: center;
   margin-bottom: 60px;
-}
+}  
 
 /*---------about-------------*/
 .about .primaryBtn {
@@ -223,20 +229,6 @@ section {
   place-items: center;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*---------services-------------*/
 .services .box {
@@ -377,10 +369,12 @@ label {
 }
 .blog .box {
   background-color: var(--primaryBackground);
-  border-radius: 10px;
+  border-radius: 10px; 
+  text-align: center;
 }
 .blog .text {
-  padding: 10px 30px;
+
+  color: var(--white);
 }
 
 .contact {
@@ -403,17 +397,41 @@ label {
   margin: 10px 0;
   border-radius: 5px;
 }
+/*Footer*/
+.footer{
+  background-color: var(--secondaryBackground);
+}
+.footer .container .content {
+  margin-right: 50px;
+  text-align: right;
+  margin-top: -60px;
+  margin-left: -20px;
+}
+.footer .container .content h5{
+  margin-right: 50px;
+  color: white;
+  text-align: right;
+  margin-top: -50px;
+  margin-left: -20px;
+}
+.footer .container .content p {
+  margin-left: 110px; /* Menggeser teks ke kanan */
+  color: white;
+  text-align: justify; /* Membuat teks rata kanan */
+  margin-right: 10%;
+}
+.footer .contact{
+  color: white;
+  margin-top: 1vh;
+}
+.footer .acont p{
+  color: white;
+}
+.footer .contact-section {
+  margin-left: 117vh;
+  color: white;
+}
 
-footer {
-  text-align: center;
-  background-color: var(--primaryBackground);
-  padding: 70px;
-  margin-top: 50px;
-}
-footer i {
-  margin: 5px;
-  color: var(--primaryColor);
-}
 /*---------footer-------------*/
 @media screen and (max-width: 768px) {
   .hero {
