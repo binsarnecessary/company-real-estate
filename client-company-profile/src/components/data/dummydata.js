@@ -49,7 +49,6 @@ export const navlink = [
 ];
 export const home = [
   {
-    text: "DORMA MADA PERKASA ",
     name: "Procurement and Construction ",
     design: "Mechanical",
     desc: "Interiors",

@@ -9,6 +9,7 @@ import Dirut from "../data/images/2.png";
 import Direktur from "../data/images/3.png";
 import { SliderLogo } from "./SliderLogo";
 
+
 export const About = () => {
   return (
     <>

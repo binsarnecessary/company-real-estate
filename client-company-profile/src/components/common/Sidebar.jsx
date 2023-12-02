@@ -29,9 +29,6 @@ export default function Sidebar(props) {
             </a>
           </li>
           <li>
-            <a className="text-decoration-none" href="/client">
-              CLIENT
-            </a>
           </li>
         </ul>
 

@@ -96,7 +96,6 @@ nav ul li a:hover::before {
   padding: 15px 0 15px 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.548);
   background-color: rgb(128, 128, 128);
-  z-index: 9999;
 }
 
 .about-page {

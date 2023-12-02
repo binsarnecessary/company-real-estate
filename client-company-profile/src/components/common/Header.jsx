@@ -3,6 +3,7 @@ import { Button, Image } from "react-bootstrap";
 import * as Icon from "react-bootstrap-icons";
 import Logo from "../data/images/logo.png";
 import Sidebar from "./Sidebar";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export const Header = () => {
   const [isShow, setShow] = useState(false);
@@ -38,8 +39,10 @@ export const Header = () => {
       {isShow ? <Sidebar isShow={isShow} /> : <></>}
 
       <div className={`navbar-logo d-flex align-items-center justify-content-between ${isScroll ? "color-active" : ""}`}>
-        <div className="logo-brand" style={{ marginLeft: "25px" }}>
-          <Image src={Logo} />
+        <div className="logo-brand" style={{ marginLeft: "30px",marginTop: "20px" }}>
+          <Link to="/">
+            <img src={Logo} alt="Logo" />
+          </Link>
         </div>
         <div className="logo-hamburger" style={{ marginRight: "25px" }}>
           <Button

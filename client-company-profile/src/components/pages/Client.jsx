@@ -14,24 +14,6 @@ export const Client = () => {
   }
   return (
     <>
-      <section className='testimonials hero'>
-        <div className='container'>
-          <Slider {...settings}>
-            {client.map((val) => (
-              <div className='box'>
-                <i data-aos='zoom-out-up'>
-                </i>
-                <p data-aos='zoom-out-down'>{val.text}</p>
-                <div className='img' data-aos='zoom-out-right'>
-                  <img src={val.image} alt='' />
-                </div>
-                <h3 data-aos='zoom-out-left'>{val.name}</h3>
-                <label data-aos='zoom-out'>{val.post}</label>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </section>
     </>
   )
 }
