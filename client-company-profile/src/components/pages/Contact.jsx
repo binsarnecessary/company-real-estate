@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { Heading } from "../common/Heading";
-import { contact } from "../data/dummydata";
 
 export const Contact = () => {
   const form = useRef();
@@ -41,7 +40,7 @@ export const Contact = () => {
 
   return (
     <>
-      <div className="contact">
+      <div className="contact mt-3">
         <div className="container">
           <Heading title="Contact Us" />
           <div className="content flexsb">
@@ -73,20 +72,18 @@ export const Contact = () => {
               </form>
             </div>
 
-            <div className="left">
-              <iframe
-                className="embed-responsive-item mt-2 ,l-3"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.1414209083714!2d106.80633342894563!3d-6.226389794431496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1505affffff%3A0x301b8a0f5d2c33ed!2sEquity%20Tower!5e0!3m2!1sen!2sid!4v1701348917358!5m2!1sen!2sid"
-                frameborder="0"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-                height="250px"
-                width="400px"
-                key={unique}
-                title="Maps"
-              ></iframe>
-            </div>
+            <iframe
+              className="maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.1414209083714!2d106.80633342894563!3d-6.226389794431496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1505affffff%3A0x301b8a0f5d2c33ed!2sEquity%20Tower!5e0!3m2!1sen!2sid!4v1701348917358!5m2!1sen!2sid"
+              frameborder="0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+              height="250px"
+              width="400px"
+              key={unique}
+              title="Maps"
+            ></iframe>
           </div>
         </div>
       </div>

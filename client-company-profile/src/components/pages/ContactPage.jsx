@@ -10,7 +10,7 @@ export const ContactPage = () => {
         </div>
       </div>
 
-      <div className="contact-staff container text-center fw-bold mt-5 pt-3">
+      <div className="contact-staff container text-center fw-bold mt-5 pt-3 mb-5">
         <h2>Our Stuff</h2>
         <SliderContact />
       </div>

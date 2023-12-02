@@ -54,7 +54,7 @@
 }
 
 nav ul li a {
-  position: relative;
+  /* position: relative; */
   color: white;
   line-height: 60px;
   font-size: 18px;
@@ -66,7 +66,7 @@ nav ul li a {
 
 nav ul li a::before {
   content: "";
-  position: absolute;
+  /* position: absolute; */
   width: 0;
   height: 2px;
   bottom: 0;
@@ -88,7 +88,7 @@ nav ul li a:hover::before {
   padding: 15px 0 15px 0;
   width: 100%;
   background-color: transparent;
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
   z-index: 999;
 }
 
@@ -96,6 +96,7 @@ nav ul li a:hover::before {
   padding: 15px 0 15px 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.548);
   background-color: rgb(128, 128, 128);
+  z-index: 999;
 }
 
 .about-page {
@@ -243,12 +244,114 @@ nav ul li a:hover::before {
 
 .slider-logo .logos-slide {
   display: inline-block;
-  animation: 45s slide infinite linear;
+  animation: 60s slide infinite linear;
 }
 
 .slider-logo .logos-slide img {
   height: 120px;
   margin-right: 50px;
+}
+
+.client-page {
+  padding-top: 35%;
+  background: linear-gradient(rgba(56, 56, 56, 0.726), rgba(59, 53, 53, 0.699)),
+    url(../../components/data/images/smartwork.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.client-page .title-client {
+  margin-top: -100px; /* Adjust the negative margin based on your preference */
+}
+
+.our-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(rgba(46, 45, 45, 0.826), rgba(45, 40, 40, 0.782)),
+    url(../../components/data/images/oneday.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.our-services h1 {
+  color: white;
+}
+
+/* Button Custom */
+.custom-button-services {
+  background-color: transparent; /* Warna latar belakang putih */
+  color: white; /* Warna teks hitam */
+  font-size: 1.2em; /* Ukuran huruf sedikit lebih besar */
+  border: 1px solid black; /* Border 1 piksel solid hitam */
+  padding: 10px 20px; /* Padding 10 piksel atas/bawah, 20 piksel kiri/kanan */
+
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button-services:hover {
+  background-color: white; /* Warna latar belakang hitam saat dihover */
+  color: black; /* Warna teks putih saat dihover */
+}
+
+.our-services .button-contact-us {
+  margin-left: 20px;
+}
+
+.services-content {
+  background-color: rgb(31, 29, 29);
+  padding-top: 140px;
+  padding-bottom: 100px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  .card {
+    position: relative;
+    margin-left: 30px;
+    width: 450px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .card-background {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8; /* Tingkat transparansi awal */
+
+      transition: opacity 0.3s ease-in-out;
+
+      &:hover {
+        opacity: 0.4; /* Tingkat transparansi saat dihover */
+      }
+    }
+
+    .card-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -302,5 +405,50 @@ nav ul li a:hover::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+  }
+
+  .client-page {
+    padding-top: 60%;
+    background: linear-gradient(
+        rgba(56, 56, 56, 0.726),
+        rgba(59, 53, 53, 0.699)
+      ),
+      url(../../components/data/images/smartwork.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .client-page .title-client {
+    margin-top: -100px; /* Adjust the negative margin based on your preference */
+  }
+
+  .slider-logo:before,
+  .slider-logo:after {
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+
+  .slider-logo:before {
+    left: 0;
+    background: linear-gradient(to left, transparent, rgb(255, 255, 255));
+  }
+
+  .slider-logo:after {
+    right: 0;
+    background: linear-gradient(to right, transparent, rgb(255, 255, 255));
+  }
+
+  .our-services .button-contact-us {
+    margin-left: 0px;
+  }
+
+  .maps {
+    width: 80px;
+    height: 100;
   }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { logoClient } from "../data/dummydata";
 
 export const SliderLogo = () => {
-  const logos = [...logoClient, ...logoClient];
+  const logos = [...logoClient, ...logoClient, ...logoClient];
 
   return (
     <>

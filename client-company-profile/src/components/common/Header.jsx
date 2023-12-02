@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, Image } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import * as Icon from "react-bootstrap-icons";
 import Logo from "../data/images/logo.png";
 import Sidebar from "./Sidebar";
@@ -7,8 +7,7 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export const Header = () => {
   const [isShow, setShow] = useState(false);
-  const [isScroll, setScroll] = useState(false); 
-
+  const [isScroll, setScroll] = useState(false);
 
   localStorage.setItem("isShow", isShow);
 
@@ -21,25 +20,32 @@ export const Header = () => {
   };
 
   const changeBacgroundColor = () => {
-    if(window.scrollY > 10) {
-      setScroll(true)
+    if (window.scrollY > 10) {
+      setScroll(true);
     } else {
-      setScroll(false)
+      setScroll(false);
     }
-  }
+  };
 
-  useEffect (() => {
-    changeBacgroundColor()
+  useEffect(() => {
+    changeBacgroundColor();
 
-    window.addEventListener('scroll', changeBacgroundColor)
-  })
+    window.addEventListener("scroll", changeBacgroundColor);
+  });
 
   return (
     <div>
       {isShow ? <Sidebar isShow={isShow} /> : <></>}
 
-      <div className={`navbar-logo d-flex align-items-center justify-content-between ${isScroll ? "color-active" : ""}`}>
-        <div className="logo-brand" style={{ marginLeft: "30px",marginTop: "20px" }}>
+      <div
+        className={`navbar-logo d-flex align-items-center justify-content-between ${
+          isScroll ? "color-active" : ""
+        }`}
+      >
+        <div
+          className="logo-brand"
+          style={{ marginLeft: "30px", marginTop: "20px" }}
+        >
           <Link to="/">
             <img src={Logo} alt="Logo" />
           </Link>
@@ -67,4 +73,4 @@ export const Header = () => {
       </div>
     </div>
   );
-}
+};
