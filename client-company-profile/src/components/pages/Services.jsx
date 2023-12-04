@@ -1,7 +1,7 @@
 import React from "react";
-import Foto1 from "../data/images/services/4.png";
-import Foto2 from "../data/images/services/5.png";
-import Foto3 from "../data/images/services/1.png";
+import Foto1 from "../data/images/services/6.jpg";
+import Foto2 from "../data/images/services/8.jpg";
+import Foto3 from "../data/images/services/7.jpg";
 
 export const Services = () => {
   return (

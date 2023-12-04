@@ -178,48 +178,20 @@ video {
   border-radius: 5px;
 }
 
-/* CSS untuk LoadingScreen.js */
+/* CSS untuk LoadingScreen */
+
 .loading-screen {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: var(--primaryBackground);
+  background-color: var(--black);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 999;
-  transition: opacity 1s ease, transform 1s ease; /* Menambahkan transisi untuk opacity dan transform */
-  opacity: 1;
-  transform: translateY(0%); /* Posisi awal loading screen */
-}
-
-.loading-spinner {
-  border: 8px solid #f3f3f3;
-  border-top: 8px solid #3498db;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 1s linear infinite;
-}
-.loading-text {
-  font-size: 1.5em;
-  white-space: nowrap; /* Mencegah teks untuk melakukan wrap ke baris baru */
-  overflow: hidden; /* Menyembunyikan teks yang melebihi lebar */
-  animation: marquee 3s linear infinite; /* Animasi marquee dengan durasi 3 detik */
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-@keyframes marquee {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
 }
 
 
