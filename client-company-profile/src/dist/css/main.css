@@ -129,7 +129,6 @@ nav ul li a:hover::before {
 }
 
 .about-our-vision .main-vision {
-  letter-spacing: 2px;
   text-align: justify;
   font-style: bold;
 }
@@ -255,7 +254,7 @@ nav ul li a:hover::before {
 .client-page {
   padding-top: 35%;
   background: linear-gradient(rgba(56, 56, 56, 0.726), rgba(59, 53, 53, 0.699)),
-    url(../../components/data/images/smartwork.jpg);
+    url(../../components/data/images/banner-client.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -266,15 +265,9 @@ nav ul li a:hover::before {
 }
 
 .our-services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100vh;
-  padding: 20px;
+  padding-top: 40%;
   background: linear-gradient(rgba(46, 45, 45, 0.826), rgba(45, 40, 40, 0.782)),
-    url(../../components/data/images/oneday.jpg);
+    url(../../components/data/images/banner-services.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -282,6 +275,7 @@ nav ul li a:hover::before {
 
 .our-services h1 {
   color: white;
+  margin-top: -100px;
 }
 
 /* Button Custom */
@@ -318,8 +312,6 @@ nav ul li a:hover::before {
 
   .card {
     position: relative;
-    margin-left: 30px;
-    width: 450px;
     height: 250px;
     overflow: hidden;
     border-radius: 10px;
@@ -334,12 +326,10 @@ nav ul li a:hover::before {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      opacity: 0.8; /* Tingkat transparansi awal */
-
+      opacity: 0.5; /* Tingkat transparansi awal */
       transition: opacity 0.3s ease-in-out;
-
       &:hover {
-        opacity: 0.4; /* Tingkat transparansi saat dihover */
+        opacity: 0.2; /* Tingkat transparansi saat dihover */
       }
     }
 
@@ -350,9 +340,28 @@ nav ul li a:hover::before {
       transform: translate(-50%, -50%);
       text-align: center;
       color: white;
+      font-style: bold;
     }
   }
+
 }
+
+
+.mechanical-services {
+  padding-top: 35%;
+  background: linear-gradient(rgba(56, 56, 56, 0.726), rgba(59, 53, 53, 0.699)),
+    url(../../components/data/images/mechanical-services.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.mechanical-services .title-mechanical {
+  margin-top: -100px; /* Adjust the negative margin based on your preference */
+}
+
+
+
 
 @media screen and (max-width: 720px) {
   .about-page {
@@ -413,7 +422,7 @@ nav ul li a:hover::before {
         rgba(56, 56, 56, 0.726),
         rgba(59, 53, 53, 0.699)
       ),
-      url(../../components/data/images/smartwork.jpg);
+      url(../../components/data/images/banner-client.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -447,8 +456,22 @@ nav ul li a:hover::before {
     margin-left: 0px;
   }
 
-  .maps {
-    width: 80px;
-    height: 100;
+  .mechanical-services {
+    padding-top: 70%;
   }
+
+  .mechanical-services .title-mechanical {
+    margin-top: -80px; /* Adjust the negative margin based on your preference */
+  }
+
+
+  .our-services {
+    padding-top: 70%;
+  }
+  
+  .our-services h1 {
+    color: white;
+    margin-top: -120px;
+  }
+
 }

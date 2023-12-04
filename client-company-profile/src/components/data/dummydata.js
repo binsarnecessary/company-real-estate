@@ -11,19 +11,16 @@ import {
   YouTube,
 } from "@mui/icons-material";
 
-import Logo1 from "./images/logoClient/dinpend-dki.jpg";
-import Logo2 from "./images/logoClient/cbre.png";
-import Logo3 from "./images/logoClient/ibm.png";
-import Logo4 from "./images/logoClient/jalesveva.png";
+import Logo1 from "./images/logoClient/Kementerian_Agama_.png";
+import Logo2 from "./images/logoClient/Logo-Dinkes-dki.png";
+import Logo3 from "./images/logoClient/dinpend-dki.jpg";
+import Logo4 from "./images/logoClient/ibm.png";
 import Logo5 from "./images/logoClient/kementrtian-kesehanatan.png";
-import Logo6 from "./images/logoClient/rsud-koja.webp";
-import Logo7 from "./images/logoClient/sman105-jkt.png";
-import Logo8 from "./images/logoClient/dispora.png";
-import Logo9 from "./images/logoClient/kominfo.webp";
-import Logo10 from "./images/logoClient/mblockmarket.png";
-import Logo11 from "./images/logoClient/sman12-jkt.png";
-import Logo12 from "./images/logoClient/sman91-jkt.png";
-import Logo13 from "./images/logoClient/sopii.png";
+import Logo6 from "./images/logoClient/kominfo.webp";
+import Logo7 from "./images/logoClient/pantarei.png";
+import Logo8 from "./images/logoClient/rspad-gatot.png";
+import Logo9 from "./images/logoClient/sopii.png";
+import Logo10 from "./images/logoClient/tni-ad.png";
 
 export const navlink = [
   {
@@ -198,14 +195,4 @@ export const logoClient = [
   {
     logo: Logo10,
   },
-  {
-    logo: Logo11,
-  },
-  {
-    logo: Logo12,
-  },
-  {
-    logo: Logo13,
-  },
-
 ];

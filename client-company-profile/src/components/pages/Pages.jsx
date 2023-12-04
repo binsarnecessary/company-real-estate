@@ -9,6 +9,7 @@ import { ContactPage } from "./ContactPage";
 import { BannerContact } from "./ContactPage/BannerContact";
 import { ClientPage } from "./ClientPage";
 import { ServicesPage } from "./ServicesPage";
+import { MechanicalServices } from "./DetailServices/MechanicalServices";
 export const Pages = () => {
   return (
     <>
@@ -22,6 +23,7 @@ export const Pages = () => {
           <Route exact path="/layanan" component={Layanan} />
           <Route exact path="/contact" component={ContactPage} />
           <Route exact path="/talk-to" component={BannerContact} />
+          <Route exact path="/about/mechanical-services" component={MechanicalServices} />
         </Switch>
         <Footer />
       </Router>
