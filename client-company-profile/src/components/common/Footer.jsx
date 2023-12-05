@@ -14,9 +14,8 @@ const Footer = () => {
                 src={logo}
                 alt="Company Logo"
                 className="company-logo mr-10"
-                style={{ maxWidth: '80px', maxHeight: '80px',marginTop:'-70px',marginRight:'10px' }}
               />
-              <div className="text-right">
+              <div className="nama text-right">
                 <h5 className="fw-bold">PT DORMA MADA PERKASA</h5>
                 <p className="desc">
                   Equity Tower Lantai 26 Unit H, Jalan Jendral Sudirman Senayan, Kebayoran Baru Kota Adm. Jakarta Selatan, DKI Jakarta

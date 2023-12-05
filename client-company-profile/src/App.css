@@ -55,7 +55,7 @@ h6 {
   top: 10px; 
   left: 10px;
 }
-button {
+.primaryBtn {
   border: none;
   outline: none;
   background: none;
@@ -63,24 +63,49 @@ button {
   background-color: var(--primaryColor);
   color: var(--white);
   padding: 15px 50px;
-  border-radius: 50px;
   margin-top: 20px;
+  margin-right: 10px; /* Menambahkan jarak ke kanan */
   cursor: pointer;
 }
+
+.primaryBtn1 {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 17px;
+  color: var(--white);
+  padding: 15px 50px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: 2px solid white;
+}
+.heroContent h1 {
+  margin-bottom: 100px;
+  font-size: 2.5rem;
+}
 .fontSize {
-  font-size: 50px;
+  font-size: 0px;
 }
 .primaryBtn {
   background: none;
   border: 2px solid var(--white);
 }
-@media screen and (max-width: 360px) {
-  .container {
-    max-width: 90%;
+@media screen and (max-width: 768px) {
+  .heroContent {
+    padding: 10px;
   }
 
-  button {
-    padding: 15px 30px;
+  .heroContent h1 {
+    font-size: 1.5rem;
+    margin-bottom: 50px; /* Menambahkan jarak antara h1 dan tombol pada layar responsif */
+  }
+
+  .primaryBtn,
+  .primaryBtn1 {
+    margin: 5px; /* Mengurangi jarak antara tombol pada layar responsif */
+    font-size: 0.8rem;
+    padding: 8px 15px;
+    margin-bottom: 10px;
   }
 }
 /*---------header-------------*/
@@ -205,6 +230,13 @@ video {
 .footer p {
   color: #ffffff; /* Warna putih untuk elemen <h5> dan <p> di dalam .footer */
 }
+.company-logo {
+  max-width: 80px;
+  max-height: 80px;
+  margin-top: -70px;
+  margin-right: 10px;
+}
+
 
 /*responsif footer*/
 @media (max-width: 767px) {
@@ -219,9 +251,12 @@ video {
 
   .company-info .company-logo {
     margin-bottom: 5rem; /* Ruang antara logo dan teks */
-    margin-top: 100%;
+    margin-top: 50px;
+    margin-left: -75%;
   }
-
+  .nama{
+    margin-top: -10vh;
+  }
   .social {
     margin-top: 50rem; /* Ruang atas untuk daftar kontak */
     
@@ -230,4 +265,50 @@ video {
   .social p {
     margin-bottom: 0.5rem; /* Ruang antara kontak */
   }
+}
+
+/*out work*/
+/* .wraper{
+  width: 100%;
+  padding: 10px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.perent{
+  width: 150px;
+  margin: 0 auto 0 0;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+} */
+
+
+
+
+
+
+
+.wraper{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.perent{
+  width: 37%;
+  margin: 20px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1p rgba(0, 0, 0, 0.5);
+  margin-left: -60%;
+}
+.perent:hover Img{
+  transform: scale(1.2); /* Menggunakan scale untuk animasi zoom in */
+  transition: transform 0.5s ease;
+}
+.perent1{
+  margin-top:-40vh;
+  margin-left: -1%;
 }

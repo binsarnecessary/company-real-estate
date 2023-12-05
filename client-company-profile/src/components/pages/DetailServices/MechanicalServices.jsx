@@ -1,7 +1,10 @@
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
-import Picture from "../../data/images/mechanical-col.jpeg";
 import { OurWorks } from "../OurWorks";
+
+import Picture from "../../data/images/mechanical-col.jpeg";
+import Bg1 from "../../data/images/ourwork/mecanical/1.jpeg"
+import Bg2 from "../../data/images/ourwork/mecanical/2.jpeg"
 
 export const MechanicalServices = () => {
   return (
@@ -29,6 +32,16 @@ export const MechanicalServices = () => {
 
       <div className="mt-5 pt-4">
         <OurWorks />
+      </div>
+      <div className="wraper">
+        <div className="perent">
+        </div>
+        <div className="perent1">
+        </div>
+        <div className="perent">
+        </div>
+        <div className="perent">
+        </div>
       </div>
     </>
   );
