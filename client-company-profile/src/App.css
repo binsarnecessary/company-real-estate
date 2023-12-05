@@ -224,7 +224,7 @@ video {
 /*Footer*/
 .footer{
   background-color: var(--secondaryBackground);
-  margin-top: 30vh;
+  margin-top: 1vh;
 }
 .footer h5,
 .footer p {
@@ -233,8 +233,11 @@ video {
 .company-logo {
   max-width: 80px;
   max-height: 80px;
-  margin-top: -70px;
+  margin-top: -150px;
   margin-right: 10px;
+}
+.nama .desc1{
+  margin-top: 30px;
 }
 
 
@@ -267,7 +270,26 @@ video {
   }
 }
 
-/*out work*/
+/*out work mecanical*/
+.Galery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 50px;
+}
+
+.Galery img {
+  width: 230px; /* Ganti dengan lebar yang diinginkan */
+  padding: 5px;
+  height: auto; /* Menjaga aspek rasio gambar */
+  transition: transform 0.3s ease-in-out;
+}
+
+.Galery img:hover {
+  transform: scale(1.1) translateX(10px);
+}
+
+
+
 /* .wraper{
   width: 100%;
   padding: 10px;
@@ -288,27 +310,3 @@ video {
 
 
 
-.wraper{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.perent{
-  width: 37%;
-  margin: 20px;
-  height: 280px;
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  box-shadow: 0 4px 6px -1p rgba(0, 0, 0, 0.5);
-  margin-left: -60%;
-}
-.perent:hover Img{
-  transform: scale(1.2); /* Menggunakan scale untuk animasi zoom in */
-  transition: transform 0.5s ease;
-}
-.perent1{
-  margin-top:-40vh;
-  margin-left: -1%;
-}

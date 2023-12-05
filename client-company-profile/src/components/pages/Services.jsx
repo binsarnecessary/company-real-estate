@@ -1,7 +1,7 @@
 import React from "react";
 import Foto1 from "../data/images/services/6.jpg";
-import Foto2 from "../data/images/services/7.jpg";
-import Foto3 from "../data/images/services/8.jpg";
+import Foto2 from "../data/images/services/8.jpg";
+import Foto3 from "../data/images/services/7.jpg";
 import { Col, Row } from "react-bootstrap";
 
 export const Services = () => {

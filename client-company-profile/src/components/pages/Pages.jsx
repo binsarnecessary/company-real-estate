@@ -10,6 +10,7 @@ import { BannerContact } from "./ContactPage/BannerContact";
 import { ClientPage } from "./ClientPage";
 import { ServicesPage } from "./ServicesPage";
 import { MechanicalServices } from "./DetailServices/MechanicalServices";
+import { ElectircalService } from "./DetailServices/ElectircalService";
 export const Pages = () => {
   return (
     <>

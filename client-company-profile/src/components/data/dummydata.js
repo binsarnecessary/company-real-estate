@@ -21,6 +21,9 @@ import Logo7 from "./images/logoClient/pantarei.png";
 import Logo8 from "./images/logoClient/rspad-gatot.png";
 import Logo9 from "./images/logoClient/sopii.png";
 import Logo10 from "./images/logoClient/tni-ad.png";
+import Logo11 from "./images/logoClient/Umk.jpeg";
+import Logo12 from "./images/logoClient/siplah.jpeg";
+import Logo13 from "./images/logoClient/catalogue.jpeg";
 
 export const navlink = [
   {
@@ -195,4 +198,13 @@ export const logoClient = [
   {
     logo: Logo10,
   },
+  {
+    logo:Logo11,
+  },
+  {
+    logo:Logo12,
+  },
+  {
+    logo:Logo13,
+  }
 ];

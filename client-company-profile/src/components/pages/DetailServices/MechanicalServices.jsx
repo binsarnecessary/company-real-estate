@@ -1,10 +1,18 @@
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { OurWorks } from "../OurWorks";
+import Bg1 from '../../data/images/ourwork/mecanical/1.jpeg'
+import Bg2 from '../../data/images/ourwork/mecanical/2.jpeg'
+import Bg3 from '../../data/images/ourwork/mecanical/3.jpeg'
+import Bg4 from '../../data/images/ourwork/mecanical/4.jpeg'
+import Bg5 from '../../data/images/ourwork/mecanical/5.png'
+import Bg6 from '../../data/images/ourwork/mecanical/6.jpeg'
+import Bg7 from '../../data/images/ourwork/mecanical/7.jpeg'
+import Bg8 from '../../data/images/ourwork/mecanical/8.jpeg'
+import Bg9 from '../../data/images/ourwork/mecanical/9.jpeg'
+import Bg10 from '../../data/images/ourwork/mecanical/10.jpeg'
 
 import Picture from "../../data/images/mechanical-col.jpeg";
-import Bg1 from "../../data/images/ourwork/mecanical/1.jpeg"
-import Bg2 from "../../data/images/ourwork/mecanical/2.jpeg"
 
 export const MechanicalServices = () => {
   return (
@@ -33,15 +41,17 @@ export const MechanicalServices = () => {
       <div className="mt-5 pt-4">
         <OurWorks />
       </div>
-      <div className="wraper">
-        <div className="perent">
-        </div>
-        <div className="perent1">
-        </div>
-        <div className="perent">
-        </div>
-        <div className="perent">
-        </div>
+      <div className="Galery">
+        <Image src={Bg1} alt="" />
+        <Image src={Bg2} alt="" />
+        <Image src={Bg3} alt="" />
+        <Image src={Bg4} alt="" />
+        <Image src={Bg5} alt="" />
+        <Image src={Bg6} alt="" />
+        <Image src={Bg7} alt="" />
+        <Image src={Bg8} alt="" />
+        <Image src={Bg9} alt="" />
+        <Image src={Bg10} alt="" />
       </div>
     </>
   );

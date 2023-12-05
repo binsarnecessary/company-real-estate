@@ -18,7 +18,10 @@ const Footer = () => {
               <div className="nama text-right">
                 <h5 className="fw-bold">PT DORMA MADA PERKASA</h5>
                 <p className="desc">
-                  Equity Tower Lantai 26 Unit H, Jalan Jendral Sudirman Senayan, Kebayoran Baru Kota Adm. Jakarta Selatan, DKI Jakarta
+                  Equity Tower Lantai 26 Unit H, Jalan Jendral Sudirman Senayan, Kebayoran Baru Kota Adm. Jakarta Selatan, DKI Jakarta.
+                </p>
+                <p className="desc1 ">
+                  Jl.Pejaten Raya No.12A,Pejaten barat., Ps.Minggu,Kota Jakarta Selatan,DKI Jakarta.
                 </p>
               </div>
             </div>
