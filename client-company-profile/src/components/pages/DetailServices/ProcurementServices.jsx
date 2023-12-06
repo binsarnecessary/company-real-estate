@@ -1,16 +1,9 @@
 import React from "react";
+
 import { Col, Image, Row } from "react-bootstrap";
 import { OurWorks } from "../OurWorks";
-import Bg1 from "../../data/images/ourwork/mecanical/1.jpeg";
-import Bg2 from "../../data/images/ourwork/mecanical/2.jpeg";
-import Bg3 from "../../data/images/ourwork/mecanical/3.jpeg";
-import Bg4 from "../../data/images/ourwork/mecanical/4.jpeg";
-import Bg5 from "../../data/images/ourwork/mecanical/5.png";
-import Bg6 from "../../data/images/ourwork/mecanical/6.jpeg";
-import Bg7 from "../../data/images/ourwork/mecanical/7.jpeg";
-import Bg8 from "../../data/images/ourwork/mecanical/8.jpeg";
-import Bg9 from "../../data/images/ourwork/mecanical/9.jpeg";
-import Bg10 from "../../data/images/ourwork/mecanical/10.jpeg";
+
+import Picture from "../../data/images/procurement-content.jpg";
 
 import Icon1 from "../../data/images/icon services/architect_2942441.png";
 import Icon2 from "../../data/images/icon services/brickwork_8041229.png";
@@ -19,24 +12,24 @@ import Icon4 from "../../data/images/icon services/helmet_2823675.png";
 import Icon5 from "../../data/images/icon services/home_6215427.png";
 import Icon6 from "../../data/images/icon services/woman_554741.png";
 
-import Picture from "../../data/images/mechanical-col.jpeg";
-
-export const MechanicalServices = () => {
+export const ProcurementServices = () => {
   return (
     <>
-      <div className="mechanical-services">
-        <h1 className="title-mechanical text-white fw-bold container">
-          Mechanical Services
+      <div className="procurement-services">
+        <h1 className="title-procurement text-white fw-bold container">
+          Goods Procurement Services
         </h1>
       </div>
 
-      <div className="content-mechanical container mt-5 pt-5">
+      <div className="content-procurement container mt-5 pt-5">
         <Row>
           <Col lg={6} xs={12}>
             <Image className="image-service" src={Picture} />
           </Col>
           <Col className="mt-lg-0 mt-5" lg={6} xs={12}>
-            <h1 className="fw-bold">Work with Purpose</h1>
+            <h1 className="fw-bold">
+              Excellence in Goods, Seamless Procurement
+            </h1>
             <p style={{ textAlign: "justify" }} className="mt-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Adipisci, alias aliquam impedit voluptate doloribus dolore debitis
@@ -91,11 +84,11 @@ export const MechanicalServices = () => {
         </Row>
       </div>
 
-      <div className="mt-5 pt-4">
+      <div claassName="mt-5">
         <OurWorks />
       </div>
 
-      <div className="Galery">
+      {/* <div className="Galery">
         <Image src={Bg1} alt="" />
         <Image src={Bg2} alt="" />
         <Image src={Bg3} alt="" />
@@ -106,7 +99,7 @@ export const MechanicalServices = () => {
         <Image src={Bg8} alt="" />
         <Image src={Bg9} alt="" />
         <Image src={Bg10} alt="" />
-      </div>
+      </div> */}
     </>
   );
 };

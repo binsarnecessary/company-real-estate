@@ -345,7 +345,6 @@ nav ul li a:hover::before {
       font-style: bold;
     }
   }
-
 }
 
 
@@ -362,6 +361,77 @@ nav ul li a:hover::before {
   margin-top: -100px; /* Adjust the negative margin based on your preference */
 }
 
+.image-client {
+  display: flex;
+  justify-content: center;
+}
+
+.image-client a {
+  margin: 0 10px; /* Jarak antara gambar */
+  text-decoration: none;
+}
+
+.image-client img {
+  width: 100%; /* Gambar akan memiliki lebar maksimum dari parentnya */
+  height: auto; /* Menghindari distorsi gambar */
+  display: block; /* Mengatasi spasi ekstra di bagian bawah gambar */
+  margin: 0 auto; /* Menengahkan gambar */
+}
+
+.element-mechanical {
+  background-color: #ffffff; /* Warna abu-abu latar belakang */
+  border-radius: 10px; /* Bentuk bulat latar belakang */
+  padding: 20px; /* Ruang di sekitar elemen */
+}
+
+.element-mechanical img {
+  width: 30%; /* Gambar akan memiliki lebar maksimum dari parentnya */
+  height: auto; /* Menghindari distorsi gambar */
+  display: block; /* Mengatasi spasi ekstra di bagian bawah gambar */
+  border-radius: 50%; /* Bentuk bulat gambar */
+  background-color: #bebebe; /* Warna latar belakang gambar */
+  padding: 10px; /* Ruang di sekitar gambar */
+  box-sizing: border-box; /* Padding tidak akan menambah lebar gambar */
+}
+
+.content-mechanical .image-service {
+  width: 550px;
+}
+
+
+.electrical-services {
+  padding-top: 35%;
+  background: linear-gradient(rgba(56, 56, 56, 0.726), rgba(59, 53, 53, 0.699)),
+    url(../../components/data/images/electrical-services.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.electrical-services .title-electrical {
+  margin-top: -100px; /* Adjust the negative margin based on your preference */
+}
+
+.content-electrical .image-service {
+  width: 550px;
+}
+
+.procurement-services {
+  padding-top: 35%;
+  background: linear-gradient(rgba(56, 56, 56, 0.726), rgba(59, 53, 53, 0.699)),
+    url(../../components/data/images/procurement-services.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.procurement-services .title-procurement {
+  margin-top: -100px; /* Adjust the negative margin based on your preference */
+}
+
+.content-procurement .image-service {
+  width: 550px;
+}
 
 
 
@@ -466,14 +536,50 @@ nav ul li a:hover::before {
     margin-top: -80px; /* Adjust the negative margin based on your preference */
   }
 
+  .electrical-services {
+    padding-top: 70%;
+  }
+
+  .electrical-services .title-electrical {
+    margin-top: -80px; /* Adjust the negative margin based on your preference */
+  }
+
+  .procurement-services {
+    padding-top: 70%;
+  }
+
+  .procurement-services .title-procurement {
+    margin-top: -80px; /* Adjust the negative margin based on your preference */
+  }
+
+  .content-mechanical .image-service {
+    width: 300px;
+  }
+
+  .content-electrical .image-service {
+    width: 250px;
+  }
+
+  .content-procurement .image-service {
+    width: 250px;
+  }
 
   .our-services {
     padding-top: 70%;
   }
-  
+
   .our-services h1 {
     color: white;
     margin-top: -120px;
+  }
+
+  .image-client {
+    flex-direction: column; /* Mengubah arah tata letak menjadi kolom */
+    align-items: center; /* Menengahkan elemen-elemen anak secara horizontal */
+  }
+
+  .image-client a {
+    margin: 10px 0; /* Jarak antara gambar di tampilan mobile */
   }
 
 }

@@ -3,7 +3,6 @@ import { Button } from "react-bootstrap";
 import * as Icon from "react-bootstrap-icons";
 import Logo from "../data/images/logo.png";
 import Sidebar from "./Sidebar";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export const Header = () => {
   const [isShow, setShow] = useState(false);
@@ -46,9 +45,9 @@ export const Header = () => {
           className="logo-brand"
           style={{ marginLeft: "30px", marginTop: "20px" }}
         >
-          <Link to="/">
+          <a href="/">
             <img src={Logo} alt="Logo" />
-          </Link>
+          </a>
         </div>
         <div className="logo-hamburger" style={{ marginRight: "25px" }}>
           <Button

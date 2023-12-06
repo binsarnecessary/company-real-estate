@@ -1,7 +1,7 @@
 import React from "react";
 import Foto1 from "../data/images/services/6.jpg";
 import Foto2 from "../data/images/services/8.jpg";
-import Foto3 from "../data/images/services/7.jpg";
+import Foto3 from "../data/images/foto-suply.jpg";
 import { Col, Row } from "react-bootstrap";
 
 export const Services = () => {
@@ -20,7 +20,7 @@ export const Services = () => {
           <Row>
             <Col lg={4} xs={12} className="ml-lg- ml-3 mr-lg-0 mr-3">
               {" "}
-              <a href="/about/mechanical-services">
+              <a href="/services/mechanical-services">
                 <div className="card">
                   <img
                     src={Foto1}
@@ -36,30 +36,34 @@ export const Services = () => {
               </a>
             </Col>
             <Col lg={4} xs={12} className="mt-lg-0 mt-5 ">
-              <div className="card">
-                <img
-                  src={Foto2}
-                  alt="Card Background"
-                  className="card-background"
-                />
-                <div className="card-content">
-                  <h3 className="text-black fw-bold">Electrical Services.</h3>
+              <a href="/services/electrical-services">
+                <div className="card">
+                  <img
+                    src={Foto2}
+                    alt="Card Background"
+                    className="card-background"
+                  />
+                  <div className="card-content">
+                    <h3 className="text-black fw-bold">Electrical Services.</h3>
+                  </div>
                 </div>
-              </div>
+              </a>
             </Col>
             <Col lg={4} xs={12} className="mt-lg-0 mt-5">
-              <div className="card">
-                <img
-                  src={Foto3}
-                  alt="Card Background"
-                  className="card-background"
-                />
-                <div className="card-content">
-                  <h3 className="text-black fw-bold">
-                    Goods Procurement Services.
-                  </h3>
+              <a href="/services/procurement-services">
+                <div className="card">
+                  <img
+                    src={Foto3}
+                    alt="Card Background"
+                    className="card-background"
+                  />
+                  <div className="card-content">
+                    <h3 className="text-black fw-bold">
+                      Goods Procurement Services.
+                    </h3>
+                  </div>
                 </div>
-              </div>
+              </a>
             </Col>
           </Row>
         </div>

@@ -41,7 +41,7 @@ export const Contact = () => {
 
   return (
     <>
-      <div className="contact mt-3">
+      <div className="contact mt-3 pb-5">
         <div className="container">
           <Heading title="Contact Us" />
           <Row>

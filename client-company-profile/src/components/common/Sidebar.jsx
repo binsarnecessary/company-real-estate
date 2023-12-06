@@ -1,5 +1,5 @@
 import React from "react";
-import * as Icon from "react-bootstrap-icons"
+import * as Icon from "react-bootstrap-icons";
 
 export default function Sidebar(props) {
   const { isShow } = props;
@@ -33,16 +33,19 @@ export default function Sidebar(props) {
               CONTACT
             </a>
           </li>
-          <li>
-          </li>
+          <li></li>
         </ul>
 
         <div className="contact-sidebar text-decoration-none">
-          <a href="/"><Icon.Facebook /></a>
-          <a href="/"><Icon.Twitter /></a>
-          <a href="/"><Icon.Instagram /></a>
-          <a href="/"><Icon.Youtube /></a>
-          <a href="/"><Icon.Envelope /></a>
+          <a href="/">
+            <Icon.Instagram />
+          </a>
+          <a href="https://www.linkedin.com/company/pt-dorma-mada-perkasa/about/">
+            <Icon.Linkedin />
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aldolinovil@dorma.com">
+            <Icon.Envelope />
+          </a>
         </div>
       </nav>
     </div>

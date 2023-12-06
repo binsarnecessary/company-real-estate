@@ -7,13 +7,12 @@ import Komisaris from "../data/images/2.png";
 import Dirut from "../data/images/1.png";
 import Direktur from "../data/images/3.png";
 
-
 export const About = () => {
   return (
     <>
       <HeaderAbout />
 
-      <section className="about">
+      <section className="about mb-lg-0 mb-5 mt-lg-0 mt-5">
         <div className="container flex">
           {about.map((val) => (
             <>
@@ -29,6 +28,8 @@ export const About = () => {
           ))}
         </div>
       </section>
+
+      <div className="pt-lg-0 pt-5"></div>
 
       <div className="about-our-vision">
         <div className="title-vision container">
@@ -97,12 +98,12 @@ export const About = () => {
                 className="mx-auto"
               />
               <h6 className="mt-2 fw-bold text-center text-black">
-                 Ervano Laras Wijanarko
+                Ervano Laras Wijanarko
               </h6>
               <h6 className="mt-1 text-center text-black">CEO</h6>
             </div>
           </Col>
-          <Col  lg={3} xs={12}>
+          <Col lg={3} xs={12}>
             <div className="card mt-lg-0 mt-5">
               <Image
                 src={Dirut}
@@ -116,12 +117,12 @@ export const About = () => {
                 className="mx-auto"
               />
               <h6 className="mt-2 fw-bold text-center text-black">
-              Ahmad Fajar
+                Ahmad Fajar
               </h6>
               <h6 className="mt-1 text-center text-black">COMMISSIONER</h6>
             </div>
           </Col>
-          <Col  lg={3} xs={12}>
+          <Col lg={3} xs={12}>
             <div className="card mt-lg-0 mt-5">
               <Image
                 src={Direktur}

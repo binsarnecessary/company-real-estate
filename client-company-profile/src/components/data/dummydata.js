@@ -24,6 +24,9 @@ import Logo10 from "./images/logoClient/tni-ad.png";
 import Logo11 from "./images/logoClient/Umk.jpeg";
 import Logo12 from "./images/logoClient/siplah.jpeg";
 import Logo13 from "./images/logoClient/catalogue.jpeg";
+import Logo14 from "./images/logoClient/mabesad.jpg";
+import Logo15 from "./images/logoClient/mabesal.png";
+import Logo16 from "./images/logoClient/mabesau.png";
 
 export const navlink = [
   {
@@ -47,11 +50,13 @@ export const navlink = [
     text: "Client",
   },
 ];
+
 export const home = [
   {
     name: "QUALITY IN EVERY PROJECT ",
   },
 ];
+
 export const about = [
   {
     desc: "PT Dorma Mada Perkasa is a company engaged in the procurement of goods and services. This includes building construction tools and materials, electricity management, office equipment, and others.PT Dorma Mada Perkasa was founded in 2022 and plays an active role in development in various sectors throughout the country. In this case, it is certainly not an easy thing, with various experiences and the learning process that has been passed over the years which has led the company to grow and develop in accordance with the company's strategic plan.",
@@ -59,6 +64,7 @@ export const about = [
       "Building trust and commitment is the main key for the company to work, as well as motivating the team in designing, implementing and controlling projects using various management and construction methods that have been determined.As a manifestation of a series of learning processes and company experience through providing the best goods and services in creating more real work",
   },
 ];
+
 export const visi = [
   {
     id: 1,
@@ -92,6 +98,7 @@ export const services = [
     desc: "PT Dorma Mada Perkasa provides goods procurement services which include electronic equipment, computers, printers, fingerprint absences, access doors, hospital cleaning equipment, sliding doors, CCTV, t-shirts, event equipment, telephone cable networks, etc.",
   },
 ];
+
 export const client = [
   {
     id: 1,
@@ -112,6 +119,7 @@ export const client = [
     post: "Direktur",
   },
 ];
+
 export const layanan = [
   {
     id: 1,
@@ -132,6 +140,7 @@ export const layanan = [
     cover: "./images/Kenapakami/3.jpg",
   },
 ];
+
 export const contact = [
   {
     icon: <AddLocationAltOutlined />,
@@ -150,6 +159,7 @@ export const contact = [
     text2: "ervanowijanarko@dorma",
   },
 ];
+
 export const social = [
   {
     icon: <Facebook />,
@@ -197,12 +207,60 @@ export const logoClient = [
     logo: Logo10,
   },
   {
-    logo:Logo11,
+    logo: Logo11,
   },
   {
-    logo:Logo12,
+    logo: Logo12,
   },
   {
-    logo:Logo13,
-  }
+    logo: Logo13,
+  },
+];
+
+export const logoClientNotSlider = [
+  {
+    logo: Logo1,
+  },
+  {
+    logo: Logo2,
+  },
+  {
+    logo: Logo3,
+  },
+  {
+    logo: Logo4,
+  },
+  {
+    logo: Logo5,
+  },
+  {
+    logo: Logo6,
+  },
+  {
+    logo: Logo8,
+  },
+  {
+    logo: Logo9,
+  },
+  {
+    logo: Logo10,
+  },
+  {
+    logo: Logo11,
+  },
+  {
+    logo: Logo12,
+  },
+  {
+    logo: Logo13,
+  },
+  {
+    logo: Logo14,
+  },
+  {
+    logo: Logo15,
+  },
+  {
+    logo: Logo16,
+  },
 ];
