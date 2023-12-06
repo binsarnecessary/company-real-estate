@@ -14,19 +14,21 @@ export const Hero = () => {
           <h1>
             <Typewriter
               options={{
-                strings:[`${val.name}`,`${val.design}`, `${val.desc}`],
+                strings:[`${val.name}`],
                 autoStart:true,
                 loop:true,
               }}    
             />
           </h1>
+          <div className="btn">
           <p data-aos='fade-left'></p>
             <button className='primaryBtn' data-aos='fade-up-right' style={{ textDecoration: 'none', color: 'white'}}>
               <Link to='/services' style={{ color: 'white', textDecoration: 'none' }}>Our Work</Link>
             </button>
             <button className='primaryBtn1'data-aos='fade-up-left'  style={{ textDecoration: 'none', color: 'white'}}>
               <Link to='/contact' style={{ color: 'white', textDecoration: 'none' }}>Contact</Link>
-            </button>
+            </button>  
+          </div>
         </div>
       ))}
       </div>

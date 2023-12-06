@@ -39,8 +39,6 @@ const Footer = () => {
             <div className="social-media mt-3">
               <div className="acont text-decoration-none">
                 <FaInstagram style={{ marginRight: '15px', fontSize: '30px',color:'white',cursor:'pointer' }} />
-                <FaFacebook style={{ marginRight: '15px', fontSize: '30px',color:'white',cursor:'pointer' }} />
-                <FaTwitter style={{ marginRight: '15px', fontSize: '30px',color:'white',cursor:'pointer' }} />
               </div>
             </div>
           </Col>

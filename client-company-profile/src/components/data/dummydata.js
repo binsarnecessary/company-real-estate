@@ -49,9 +49,7 @@ export const navlink = [
 ];
 export const home = [
   {
-    name: "Procurement and Construction ",
-    design: "Mechanical",
-    desc: "Interiors",
+    name: "QUALITY IN EVERY PROJECT ",
   },
 ];
 export const about = [

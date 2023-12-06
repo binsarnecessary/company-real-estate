@@ -3,8 +3,8 @@ import { Heading } from "../common/Heading";
 import { about } from "../data/dummydata";
 import { HeaderAbout } from "./HeaderAbout";
 import { Col, Image, Row } from "react-bootstrap";
-import Komisaris from "../data/images/1.png";
-import Dirut from "../data/images/2.png";
+import Komisaris from "../data/images/2.png";
+import Dirut from "../data/images/1.png";
 import Direktur from "../data/images/3.png";
 
 
@@ -20,7 +20,7 @@ export const About = () => {
               <div className="left" data-aos="fade-down-right">
                 <img src={val.cover} alt="" />
               </div>
-              <div className="right" data-aos="fade-down-left">
+              <div className="right about1" data-aos="fade-down-left">
                 <Heading title="About" />
                 <p className="text-black">{val.desc}</p>
                 <p className="text-black">{val.desc1}</p>
@@ -97,9 +97,9 @@ export const About = () => {
                 className="mx-auto"
               />
               <h6 className="mt-2 fw-bold text-center text-black">
-                Ahmad Fajar
+                 Ervano Laras Wijanarko
               </h6>
-              <h6 className="mt-1 text-center text-black">Komisaris</h6>
+              <h6 className="mt-1 text-center text-black">CEO</h6>
             </div>
           </Col>
           <Col  lg={3} xs={12}>
@@ -116,9 +116,9 @@ export const About = () => {
                 className="mx-auto"
               />
               <h6 className="mt-2 fw-bold text-center text-black">
-                Ervano Wijanarko
+              Ahmad Fajar
               </h6>
-              <h6 className="mt-1 text-center text-black">Direktur Utama</h6>
+              <h6 className="mt-1 text-center text-black">COMMISSIONER</h6>
             </div>
           </Col>
           <Col  lg={3} xs={12}>
@@ -137,7 +137,7 @@ export const About = () => {
               <h6 className="mt-2 fw-bold text-center text-black">
                 Aldolinovil
               </h6>
-              <h6 className="mt-1 text-center text-black">Direktur</h6>
+              <h6 className="mt-1 text-center text-black">COO</h6>
             </div>
           </Col>
         </Row>
