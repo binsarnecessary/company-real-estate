@@ -1,16 +1,44 @@
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { OurWorks } from "../OurWorks";
-import Bg1 from "../../data/images/ourwork/mecanical/1.jpeg";
-import Bg2 from "../../data/images/ourwork/mecanical/2.jpeg";
-import Bg3 from "../../data/images/ourwork/mecanical/3.jpeg";
-import Bg4 from "../../data/images/ourwork/mecanical/4.jpeg";
-import Bg5 from "../../data/images/ourwork/mecanical/5.png";
-import Bg6 from "../../data/images/ourwork/mecanical/6.jpeg";
-import Bg7 from "../../data/images/ourwork/mecanical/7.jpeg";
-import Bg8 from "../../data/images/ourwork/mecanical/8.jpeg";
-import Bg9 from "../../data/images/ourwork/mecanical/9.jpeg";
-import Bg10 from "../../data/images/ourwork/mecanical/10.jpeg";
+import Bg1 from "../../data/images/ourwork/mecanical/1.jpg";
+import Bg2 from "../../data/images/ourwork/mecanical/2.jpg";
+import Bg3 from "../../data/images/ourwork/mecanical/3.jpg";
+import Bg4 from "../../data/images/ourwork/mecanical/4.jpg";
+import Bg5 from "../../data/images/ourwork/mecanical/5.jpg";
+import Bg6 from "../../data/images/ourwork/mecanical/6.jpg";
+import Bg7 from "../../data/images/ourwork/mecanical/7.jpg";
+import Bg8 from "../../data/images/ourwork/mecanical/8.jpg";
+import Bg9 from "../../data/images/ourwork/mecanical/9.jpg";
+import Bg10 from "../../data/images/ourwork/mecanical/10.jpg";
+import Bg11 from "../../data/images/ourwork/mecanical/11.jpg";
+import Bg12 from "../../data/images/ourwork/mecanical/12.jpg";
+import Bg13 from "../../data/images/ourwork/mecanical/13.jpeg";
+import Bg14 from "../../data/images/ourwork/mecanical/14.jpg";
+import Bg15 from "../../data/images/ourwork/mecanical/15.jpg";
+import Bg16 from "../../data/images/ourwork/mecanical/16.jpg";
+import Bg17 from "../../data/images/ourwork/mecanical/17.jpg";
+import Bg18 from "../../data/images/ourwork/mecanical/18.jpg";
+import Bg19 from "../../data/images/ourwork/mecanical/19.jpg";
+import Bg20 from "../../data/images/ourwork/mecanical/20.jpg";
+import Bg21 from "../../data/images/ourwork/mecanical/21.jpg";
+import Bg22 from "../../data/images/ourwork/mecanical/22.jpg";
+import Bg23 from "../../data/images/ourwork/mecanical/23.jpg";
+import Bg24 from "../../data/images/ourwork/mecanical/24.jpg";
+import Bg25 from "../../data/images/ourwork/mecanical/25.jpg";
+import Bg26 from "../../data/images/ourwork/mecanical/26.jpg";
+import Bg27 from "../../data/images/ourwork/mecanical/27.jpg";
+import Bg28 from "../../data/images/ourwork/mecanical/28.jpg";
+import Bg29 from "../../data/images/ourwork/mecanical/29.jpg";
+import Bg30 from "../../data/images/ourwork/mecanical/30.jpg";
+import Bg31 from "../../data/images/ourwork/mecanical/31.jpg";
+import Bg32 from "../../data/images/ourwork/mecanical/32.jpg";
+import Bg33 from "../../data/images/ourwork/mecanical/33.jpg";
+import Bg34 from "../../data/images/ourwork/mecanical/34.jpg";
+import Bg35 from "../../data/images/ourwork/mecanical/35.jpg";
+import Bg36 from "../../data/images/ourwork/mecanical/36.jpg";
+import Bg37 from "../../data/images/ourwork/mecanical/37.jpg";
+import Bg38 from "../../data/images/ourwork/mecanical/38.jpg";
 
 import Icon1 from "../../data/images/icon services/architect_2942441.png";
 import Icon2 from "../../data/images/icon services/brickwork_8041229.png";
@@ -106,6 +134,36 @@ export const MechanicalServices = () => {
         <Image src={Bg8} alt="" />
         <Image src={Bg9} alt="" />
         <Image src={Bg10} alt="" />
+        <Image src={Bg11} alt="" />
+        <Image src={Bg12} alt="" />
+        <Image src={Bg13} alt="" />
+        <Image src={Bg14} alt="" />
+        <Image src={Bg15} alt="" />
+        <Image src={Bg16} alt="" />
+        <Image src={Bg17} alt="" />
+        <Image src={Bg18} alt="" />
+        <Image src={Bg19} alt="" />
+        <Image src={Bg20} alt="" />
+        <Image src={Bg21} alt="" />
+        <Image src={Bg22} alt="" />
+        <Image src={Bg23} alt="" />
+        <Image src={Bg24} alt="" />
+        <Image src={Bg25} alt="" />
+        <Image src={Bg26} alt="" />
+        <Image src={Bg27} alt="" />
+        <Image src={Bg28} alt="" />
+        <Image src={Bg29} alt="" />
+        <Image src={Bg30} alt="" />
+        <Image src={Bg30} alt="" />
+        <Image src={Bg31} alt="" />
+        <Image src={Bg32} alt="" />
+        <Image src={Bg33} alt="" />
+        <Image src={Bg34} alt="" />
+        <Image src={Bg35} alt="" />
+        <Image src={Bg36} alt="" />
+        <Image src={Bg37} alt="" />
+        <Image src={Bg38} alt="" />
+
       </div>
     </>
   );

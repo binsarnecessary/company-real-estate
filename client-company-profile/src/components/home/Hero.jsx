@@ -19,7 +19,6 @@ export const Hero = () => {
               }}    
             />
           </h1>
-          <div className="btn">
           <p data-aos='fade-left'></p>
             <button className='primaryBtn' data-aos='fade-up-right' style={{ textDecoration: 'none', color: 'white'}}>
               <a href='/services' style={{ color: 'white', textDecoration: 'none' }}>Our Work</a>
@@ -27,7 +26,6 @@ export const Hero = () => {
             <button className='primaryBtn1'data-aos='fade-up-left'  style={{ textDecoration: 'none', color: 'white'}}>
               <a href='/contact' style={{ color: 'white', textDecoration: 'none' }}>Contact</a>
             </button>  
-          </div>
         </div>
       ))}
       </div>
