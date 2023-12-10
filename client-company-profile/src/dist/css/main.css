@@ -321,17 +321,17 @@ nav ul li a:hover::before {
 
     &:hover {
       transform: scale(1.05);
+      .card-background {
+        opacity: 0.2;
+      }
     }
 
     .card-background {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      opacity: 0.5; /* Tingkat transparansi awal */
+      opacity: 0.5;
       transition: opacity 0.3s ease-in-out;
-      &:hover {
-        opacity: 0.2; /* Tingkat transparansi saat dihover */
-      }
     }
 
     .card-content {

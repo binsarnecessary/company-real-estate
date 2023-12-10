@@ -3,6 +3,7 @@ import { Button, Col, Row } from "react-bootstrap";
 import { logoClientNotSlider } from "../data/dummydata";
 import { SliderLogo } from "./SliderLogo";
 // import { OurWorks } from "./OurWorks";
+
 export const ClientPage = () => {
   return (
     <>
@@ -42,16 +43,9 @@ export const ClientPage = () => {
         </Row>
       </div>
 
-      <div className="mt-5 pt-3 mb-5">
+      <div className="mt-5 pt-3 mb-5 pb-3">
         <SliderLogo />
       </div>
-
-      <div className="container mt-5 pt-3 mb-5">
-      </div>
-
-      {/* <div className="mt-4 pt-3 mb-5 pb-3">
-        <OurWorks />
-      </div> */}
     </>
   );
 };

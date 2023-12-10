@@ -73,7 +73,7 @@ export const SliderContact = () => {
           <div>
             <div
               className="card"
-              onClick={() => handleCardClick("dormamadaperkasa@gmail.com")}
+              onClick={() => handleCardClick("binsar16febuary@gmail.com")}
             >
               <div
                 className="card-bg"
@@ -82,7 +82,7 @@ export const SliderContact = () => {
                 <div className="card-body">
                   <h5 className="card-title fw-bold">Main Office</h5>
                   <p className="card-text text-white">
-                    dormamadaperkasa@gmail.com
+                    binsar16febuary@gmail.com
                   </p>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export const SliderContact = () => {
           <div>
             <div
               className="card"
-              onClick={() => handleCardClick("aldolinovil@dorma.com")}
+              onClick={() => handleCardClick("muhammadansori2511@gmail.com")}
             >
               <div
                 className="card-bg"
@@ -99,7 +99,7 @@ export const SliderContact = () => {
               >
                 <div className="card-body">
                   <h5 className="card-title fw-bold">Main Office</h5>
-                  <p className="card-text text-white">aldolinovil@dorma.com</p>
+                  <p className="card-text text-white">muhammadansori2511@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -107,7 +107,7 @@ export const SliderContact = () => {
           <div>
             <div
               className="card"
-              onClick={() => handleCardClick("ervanowijanarko@dorma.com")}
+              onClick={() => handleCardClick("binsarnecessary89@gmail.com")}
             >
               <div
                 className="card-bg"
@@ -116,7 +116,7 @@ export const SliderContact = () => {
                 <div className="card-body">
                   <h5 className="card-title fw-bold">Main Office</h5>
                   <p className="card-text text-white">
-                    ervanowijanarko@dorma.com
+                  binsarnecessary89@gmail.com
                   </p>
                 </div>
               </div>

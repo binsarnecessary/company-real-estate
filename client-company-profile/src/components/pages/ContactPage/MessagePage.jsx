@@ -1,43 +1,67 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Button } from "react-bootstrap";
+import Swal from "sweetalert2";
+import emailjs from "@emailjs/browser";
+import { useHistory } from "react-router-dom";
 
 export const MessagePage = (props) => {
   const { handleChangeMode } = props;
+  const history = useHistory();
 
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
+  const [existingData, setExistingData] = useState({});
+  const [contactEmail, setContactEmail] = useState(
+    localStorage.getItem("contactEmail")
+  );
+
+  const form = useRef();
 
   useEffect(() => {
     // Retrieve existing data from localStorage
     const bodyString = localStorage.getItem("body");
-    if (bodyString) {
-      const body = JSON.parse(bodyString);
-      if (body.enquire) {
-        setMessage(body.enquire);
-      }
-    }
+    const body = JSON.parse(bodyString) || {};
+    setExistingData(body);
   }, []);
 
-  const existingDataString = localStorage.getItem("body");
-  const existingData = existingDataString ? JSON.parse(existingDataString) : {};
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  const handleNext = () => {
-    if (message.trim() !== "") {
-      handleChangeMode("");
+    emailjs
+      .sendForm(
+        "service_pgs31ns",
+        "template_vxmp59t",
+        form.current,
+        "zCFH66PEAE7FCe5VO"
+      )
+      .then(
+        (result) => {
+          e.target.reset();
+          Swal.fire({
+            title: "Success!",
+            text: "Your Message Successfully Sent",
+            icon: "success",
+            confirmButtonText: "Ok",
+          });
 
-      const updatedData = { ...existingData, message: message };
-
-      localStorage.setItem("body", JSON.stringify(updatedData));
-    } else {
-      setError("Please fill in this field");
-    }
+          history.push("/contact");
+        },
+        (error) => {
+          Swal.fire({
+            title: "Failed!",
+            text: "Your Message Failed To Send",
+            icon: "error",
+            confirmButtonText: "Ok",
+          });
+        }
+      );
   };
 
   return (
     <>
       <div className="mt-5 pt-4 container">
         <h2 className="fw-bold">Selamat Siang, PT Dorma!</h2>
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <h3 style={{ color: "rgba(54, 50, 50, 0.868)", marginTop: "50px" }}>
             Tell us how we can help you
           </h3>
@@ -52,8 +76,16 @@ export const MessagePage = (props) => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
+            name="message"
           />
           {error && <p className="text-danger">{error}</p>}
+
+          {/* Hidden Fields */}
+          <input type="hidden" name="to_email" value={contactEmail} />
+          <input type="hidden" name="from_name" value={existingData.name} />
+          <input type="hidden" name="from_email" value={existingData.email} />
+          <input type="hidden" name="enquire" value={existingData.enquire} />
+          {/* Add more hidden fields as needed */}
 
           <Button
             className="mt-5 pt-2 custom-button"
@@ -62,7 +94,7 @@ export const MessagePage = (props) => {
           >
             Back
           </Button>
-          <Button className="mt-5 pt-2 custom-button" onClick={handleNext}>
+          <Button type="submit" className="mt-5 pt-2 custom-button">
             Submit
           </Button>
         </form>
