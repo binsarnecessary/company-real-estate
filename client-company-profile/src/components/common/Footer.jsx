@@ -38,7 +38,7 @@ const Footer = () => {
               </div>
             </div>
             <h5 className="fw-bold mb-3 " style={{ marginTop: "40px" }}>
-              Contact
+              Social 
             </h5>
             <div className="social-media mt-3">
               <div className="acont text-decoration-none">

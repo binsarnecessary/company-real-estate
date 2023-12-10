@@ -9,11 +9,8 @@ export const Services = () => {
     <>
       <div className="services-content">
         <div className="text-white container fw-bold mb-4">
-          <h1 className="mb-3">
-            <u>We</u> Are PT Dorma Mada
-          </h1>
-          <h3>Our Services</h3>
-          <h5>What We Do Best</h5>
+          <h3>"Beyond Solutions, We Deliver Experiences: Your Partner in Exceptional Services."</h3>
+
         </div>
 
         <div className="card-container">

@@ -4,6 +4,8 @@ import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { Heading } from "../common/Heading";
 
+
+
 export const Contact = () => {
   const form = useRef();
   const unique = 1;

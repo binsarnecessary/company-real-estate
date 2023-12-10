@@ -3,10 +3,6 @@ import { Button, Col, Row } from "react-bootstrap";
 import { logoClientNotSlider } from "../data/dummydata";
 import { SliderLogo } from "./SliderLogo";
 // import { OurWorks } from "./OurWorks";
-import Esip from "../data/images/logoClient/siplah.jpeg";
-import Catalog from "../data/images/logoClient/catalogue.jpeg";
-import Padi from "../data/images/logoClient/Umk.jpeg";
-
 export const ClientPage = () => {
   return (
     <>
@@ -51,17 +47,6 @@ export const ClientPage = () => {
       </div>
 
       <div className="container mt-5 pt-3 mb-5">
-        <div className="image-client">
-          <a href="https://t.ly/Ei75F">
-            <img src={Esip} alt="" className="mt-5" />
-          </a>
-          <a href="https://t.ly/ymIei">
-            <img src={Padi} alt="" />
-          </a>
-          <a href="https://e-katalog.lkpp.go.id/info/penyedia/890887">
-            <img src={Catalog} alt="" className="mt-5 pt-lg-5" />
-          </a>
-        </div>
       </div>
 
       {/* <div className="mt-4 pt-3 mb-5 pb-3">

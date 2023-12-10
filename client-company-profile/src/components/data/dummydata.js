@@ -207,7 +207,7 @@ export const logoClient = [
     logo: Logo10,
   },
   {
-    logo: Logo11,
+    logo: Logo11
   },
   {
     logo: Logo12,
@@ -244,15 +244,6 @@ export const logoClientNotSlider = [
   },
   {
     logo: Logo10,
-  },
-  {
-    logo: Logo11,
-  },
-  {
-    logo: Logo12,
-  },
-  {
-    logo: Logo13,
   },
   {
     logo: Logo14,

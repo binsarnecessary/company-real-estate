@@ -2,7 +2,7 @@ import React from "react";
 import { Heading } from "../common/Heading";
 import { about } from "../data/dummydata";
 import { HeaderAbout } from "./HeaderAbout";
-import { Col, Image, Row } from "react-bootstrap";
+import { Col,Image, Row } from "react-bootstrap";
 import Komisaris from "../data/images/2.png";
 import Dirut from "../data/images/1.png";
 import Direktur from "../data/images/3.png";
@@ -38,11 +38,7 @@ export const About = () => {
         <div className="main-vision container text-white">
           <Col lg={8}>
             <h2>
-              As a contractor that provides care, we also empower with services
-              that deliver sophisticated expertise to your project needs.
-              Whether you're searching for building automation system experts or
-              commercial construction contractors, Egan Company specializes in
-              making ideas into reality and problems into solution
+            Where Caring Meets Craftsmanship. Elevating Projects with Sophisticated Expertise, Turning Ideas into Reality in Building Automation and Commercial Construction
             </h2>
           </Col>
         </div>
@@ -54,27 +50,23 @@ export const About = () => {
             <h2 className="fw-bold">Our Mision</h2>
           </Col>
           <Col xs={12} lg={2} className="mt-lg-0 mt-3">
-            <h6>
-              Prioritize interests consumers by giving the most effective,
-              current, and ideas most modern
+            <h6 > 
+            &#8226;Unveiling the Most Effective and Modern Ideas
             </h6>
           </Col>
           <Col xs={12} lg={2} className="mt-lg-0 mt-3">
             <h6>
-              Provide equipment with best quality and of course with competitive
-              prices
+            &#8226;Offering Pinnacle-Quality Equipment at Competitive Prices
             </h6>
           </Col>
           <Col xs={12} lg={3} className="mt-lg-0 mt-3">
             <h6>
-              Prioritize honesty and professionalism so that sustainable
-              relationships are established
+            &#8226;Embracing Honesty and Professionalism for Enduring Relationships
             </h6>
           </Col>
           <Col xs={12} lg={3} className="mt-lg-0 mt-3">
             <h6>
-              Synergize with various interested parties and work partners to
-              provide and produce the best service for consumers
+            &#8226;Synergizing with Diverse Stakeholders and Partners to Deliver Excellence in Service3
             </h6>
           </Col>
         </Row>
