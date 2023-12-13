@@ -73,7 +73,7 @@ export const SliderContact = () => {
           <div>
             <div
               className="card"
-              onClick={() => handleCardClick("binsar16febuary@gmail.com")}
+              onClick={() => handleCardClick("aldolinovil2022@gmail.com")}
             >
               <div
                 className="card-bg"
@@ -82,7 +82,7 @@ export const SliderContact = () => {
                 <div className="card-body">
                   <h5 className="card-title fw-bold">Main Office</h5>
                   <p className="card-text text-white">
-                    binsar16febuary@gmail.com
+                  aldolinovil2022@gmail.com
                   </p>
                 </div>
               </div>

@@ -141,7 +141,6 @@ nav ul li a:hover::before {
 .about-our-client {
   border-top: 1px solid rgba(37, 34, 34, 0.842);
 }
-
 .contact-page {
   padding-top: 20%;
   background: linear-gradient(rgba(46, 45, 45, 0.826), rgba(45, 40, 40, 0.782)),
@@ -276,7 +275,7 @@ nav ul li a:hover::before {
 
 .our-services h1 {
   color: white;
-  margin-top: -100px;
+  margin-top: -27vh;
 }
 
 /* Button Custom */
@@ -303,6 +302,7 @@ nav ul li a:hover::before {
   background-color: rgb(31, 29, 29);
   padding-top: 140px;
   padding-bottom: 100px;
+  margin-top: -2vh;
 }
 
 .card-container {
@@ -313,7 +313,7 @@ nav ul li a:hover::before {
 
   .card {
     position: relative;
-    height: 250px;
+    height: 230px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -452,7 +452,7 @@ nav ul li a:hover::before {
   }
 
   .about-our-vision {
-    margin-top: 40px;
+    margin-top: 50vh;
   }
 
   .contact-page {
@@ -522,7 +522,9 @@ nav ul li a:hover::before {
     right: 0;
     background: linear-gradient(to right, transparent, rgb(255, 255, 255));
   }
-
+  /* .rocurement-services{
+    margin-top: 100vh;
+  } */
   .our-services .button-contact-us {
     margin-left: 0px;
   }
@@ -562,14 +564,16 @@ nav ul li a:hover::before {
   .content-procurement .image-service {
     width: 250px;
   }
-
+  .card{
+    width: 40vh;
+  }
   .our-services {
-    padding-top: 70%;
+    padding-top: 50vh;
   }
 
   .our-services h1 {
     color: white;
-    margin-top: -120px;
+    margin-top: -30vh;
   }
 
   .image-client {

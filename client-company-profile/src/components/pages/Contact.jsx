@@ -43,7 +43,7 @@ export const Contact = () => {
 
   return (
     <>
-      <div className="contact mt-3 pb-5">
+      <div className="contact" style={{marginTop:"-2vh"}}>
         <div className="container">
           <Heading title="Contact Us" />
           <Row>

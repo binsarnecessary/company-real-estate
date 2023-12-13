@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Image, Row } from "react-bootstrap";
+import { Col, Image, Row,Button } from "react-bootstrap";
 import { OurWorks } from "../OurWorks";
 import Bg1 from "../../data/images/ourwork/mecanical/1.jpg";
 import Bg2 from "../../data/images/ourwork/mecanical/2.jpg";
@@ -45,7 +45,7 @@ export const MechanicalServices = () => {
     <>
       <div className="mechanical-services">
         <h1 className="title-mechanical text-white fw-bold container">
-          Mechanical Services
+        Construction Services
         </h1>
       </div>
 
@@ -59,6 +59,9 @@ export const MechanicalServices = () => {
             <p style={{ textAlign: "justify" }} className="mt-3">
             At DORMA, we are your premier partner in delivering end-to-end construction solutions tailored to meet the diverse needs of our clients. Our commitment to excellence is reflected in a wide array of services designed to bring your visions to life and ensure the success of your projects.
             </p>
+            <a href="/services">
+              <Button className="mt-3 custom-button">Back</Button>
+            </a>
           </Col>
         </Row>
       </div>
@@ -66,37 +69,37 @@ export const MechanicalServices = () => {
       <div className="element-mechanical container mt-5 ">
         <Row className="row">
           <Col lg={4} xs={6}>
-            <h5 className="mt-3 fw-bold">Design and Planning</h5>
-            <p className="mb-5" >oInnovative designs and meticulous planning for seamless project execution.</p>
+            <h5 className="mt-3 fw-bold mekanik1">Design and Planning</h5>
+            <p className="mb-5 mekanikname1" >&#8226; Innovative designs and meticulous <br></br><span  style={{marginLeft:'9px'}}>planning for  seamless project execution</span></p>
           </Col>
           <Col lg={4} xs={6}>
-            <h5 className="mt-3 fw-bold">Construction Management</h5>
-            <p className="mb-5">o Efficient management of construction projects from initiation to completion.</p>
+            <h5 className="mt-3 fw-bold mekanik">Construction Management</h5>
+            <p className="mb-5 mekanikname">&#8226; Efficient management of construction <span style={{marginLeft:'9px'}}>projects from initiation to completion.</span></p>
           </Col>
           <Col lg={4} xs={6}>
-            <h5 className="mt-3 fw-bold">General Contracting</h5>
-            <p className="mb-5">o Turnkey solutions for all construction needs, ensuring a hassle-free experience.</p>
-          </Col>
+            <h5 className="mt-3 fw-bold  mekanik1">General Contracting</h5>
+            <p className="mb-5 mekanikname1">&#8226; Turnkey solutions for all construction needs, <span style={{marginLeft:'10px'}}>ensuring a hassle-free.</span></p>
+          </Col> 
 
           <Col lg={4} xs={6}>
-            <h5 className="mt-3 fw-bold">Specialized Services</h5>
-            <p className="mb-5">o Expertise in unique construction requirements, from renovations to specialized structures.</p>
+            <h5 className="mt-3 fw-bold mekanik">Specialized Services</h5>
+            <p className="mb-5 mekanikname">&#8226; Expertise in unique construction <span style={{marginLeft:'10px'}}>requirements, from renovations</span><br></br><span style={{marginLeft:'10px'}}></span>to specialized structures.</p>
           </Col>
           <Col lg={4} xs={6}>
-            <h5 className="mt-3 fw-bold">Quality Assurance</h5>
-            <p className="mb-5">o Stringent quality control measures to guarantee the highest construction standards</p>
+            <h5 className="mt-3 fw-bold mekanik1">Quality Assurance</h5>
+            <p className="mb-5 mekanikname1">&#8226; Stringent quality control measures to <span style={{marginLeft:'10px'}}>guarantee the highest construction</span> <br></br><span style={{marginLeft:'10px'}}></span> standards</p>
           </Col>
           <Col lg={4} xs={6}>
-            <h5 className="mt-3 fw-bold">Safety First:</h5>
-            <p className="mb-5">o Commitment to a safe working environment for our team and all project stakeholders.</p>
+            <h5 className="mt-3 fw-bold mekanik">Safety First</h5>
+            <p className="mb-5 mekanikname">&#8226; Commitment to a safe working environment <span style={{marginLeft:'10px'}}>for our team and all project stakeholders.</span></p>
           </Col>
           <Col lg={4} xs={6}>
-            <h5 className="mt-3 fw-bold">Sustainability Solutions</h5>
-            <p className="mb-5">o Incorporating eco-friendly practices for environmentally conscious construction</p>
+            <h5 className="mt-3 fw-bold mekanik1">Sustainability Solutions</h5>
+            <p className="mb-5 mekanikname ">&#8226; Incorporating eco-friendly practices for <span style={{marginLeft:'10px'}}>environmentally conscious construction</span></p>
           </Col>
           <Col lg={4} xs={6}>
-            <h5 className="mt-3 fw-bold">Customized Projects</h5>
-            <p className="mb-5">o	Tailoring our services to meet the specific demands of each project.</p>
+            <h5 className="mt-3 fw-bold mekanik">Customized Projects</h5>
+            <p className="mb-5 mekanikname1">&#8226; Tailoring our services to meet the specific <span className="mekanik" style={{marginLeft:'10px'}}>demands of each project.</span></p>
           </Col>
         </Row>
       </div>

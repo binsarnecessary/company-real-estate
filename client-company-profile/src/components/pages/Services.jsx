@@ -7,7 +7,7 @@ import { Col, Row } from "react-bootstrap";
 export const Services = () => {
   return (
     <>
-      <div className="services-content">
+      <div className="services-content"  style={{marginTop:'-10vh'}}>
         <div className="text-white container fw-bold mb-4">
           <h3>"Beyond Solutions, We Deliver Experiences: Your Partner in Exceptional Services."</h3>
 
@@ -26,7 +26,7 @@ export const Services = () => {
                   />
                   <div className="card-content">
                     <h3 className="text-black fw-bold">
-                      Mechanical Construction Services.
+                      Construction Services
                     </h3>
                   </div>
                 </div>
@@ -41,7 +41,7 @@ export const Services = () => {
                     className="card-background"
                   />
                   <div className="card-content">
-                    <h3 className="text-black fw-bold">Electrical Services.</h3>
+                    <h3 className="text-black fw-bold"> Mechanical,Electrical & Plumbing Services</h3>
                   </div>
                 </div>
               </a>
@@ -56,7 +56,7 @@ export const Services = () => {
                   />
                   <div className="card-content">
                     <h3 className="text-black fw-bold">
-                      Goods Procurement Services.
+                      Procurement Services
                     </h3>
                   </div>
                 </div>

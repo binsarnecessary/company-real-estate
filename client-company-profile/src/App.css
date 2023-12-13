@@ -9,7 +9,6 @@
 :root {
   --primaryBackground: #212222;
   --secondaryBackground: #2f3030;
-  --primaryColor: #e0a80d;
   --greyDark: #7d8792;
   --headingColor: #2d2e2e;
   --white: #fff;
@@ -26,7 +25,7 @@ a {
   transition: 0.5s;
 }
 a:hover {
-  color: var(--primaryColor);
+  color: var(--black);
 }
 p {
   font-size: 15px;
@@ -59,7 +58,6 @@ h6 {
   outline: none;
   background: none;
   font-size: 17px;
-  background-color: var(--primaryColor);
   color: var(--white);
   padding: 15px 50px;
   margin-top: 20px;
@@ -67,20 +65,26 @@ h6 {
   cursor: pointer;
 }
 
-.primaryBtn1 {
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 17px;
-  color: var(--white);
-  padding: 15px 50px;
-  margin-top: 20px;
-  cursor: pointer;
-  border: 2px solid white;
-}
+.primaryBtn1,
 .primaryBtn {
+  border: 2px solid white;
+  padding: 15px 50px;
+  margin-top: -70vh;
+  cursor: pointer;
   background: none;
-  border: 2px solid var(--white);
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none; /* Jangan letakkan textDecoration di dalam style atribut pada tombol */
+}
+
+.primaryBtn:hover {
+  background-color: rgb(0, 0, 0);
+  color: black;
+}
+
+.primaryBtn1:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .heroContent h1 {
@@ -232,7 +236,7 @@ video {
 /*Footer*/
 .footer{
   background-color: var(--secondaryBackground);
-  margin-top: 1vh;
+  margin-top: vh;
 }
 .footer h5,
 .footer p {
@@ -251,9 +255,6 @@ video {
 
 /*responsif footer*/
 @media (max-width: 767px) {
-  .footer {
-  }
-
   .company-info {
     flex-direction: column; /* Tumpukan elemen dalam mode kolom */
     align-items: center; /* Pusatkan elemen */
@@ -266,7 +267,7 @@ video {
     margin-left: -75%;
   }
   .nama{
-    margin-top: -10vh;
+    margin-top: 1vh;
   }
   .social {
     margin-top: 50rem; /* Ruang atas untuk daftar kontak */
@@ -296,24 +297,36 @@ video {
   transform: scale(1.1) translateX(10px);
 }
 
+/*Service Responsive*/
+@media (max-width: 767px) {
+  .image-service{
+    margin-left: -3vh;
+  }
 
+  .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-lg-4 .mekanik1{
+    margin-left: -4vh;
+    text-align: center;
+  }
+  .col-lg-4 .mekanik{
+    margin-left: -2vh;
+    text-align: center;
+  }
+  .col-lg-4 .mekanikname{
+    margin-left: -2vh;
+    font-size: 14px;
+    text-align: center;
+  }
+   .col-lg-4 .mekanikname1{
+    margin-left: -2vh;
+    font-size: 14px;
+    text-align: center;
+  }
 
-/* .wraper{
-  width: 100%;
-  padding: 10px;
-  margin: 100px auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
-.perent{
-  width: 150px;
-  margin: 0 auto 0 0;
-  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
-} */
-
-
-
 
 
 

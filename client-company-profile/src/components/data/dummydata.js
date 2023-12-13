@@ -59,9 +59,9 @@ export const home = [
 
 export const about = [
   {
-    desc: "PT Dorma Mada Perkasa is a company engaged in the procurement of goods and services. This includes building construction tools and materials, electricity management, office equipment, and others.PT Dorma Mada Perkasa was founded in 2022 and plays an active role in development in various sectors throughout the country. In this case, it is certainly not an easy thing, with various experiences and the learning process that has been passed over the years which has led the company to grow and develop in accordance with the company's strategic plan.",
+    desc: "PT Dorma Mada Perkasa is a company engaged in the procurement of goods and services. This includes building construction tools and materials, electricity management, office equipment, and others. PT Dorma Mada Perkasa was founded in 2022 and plays an active role in development in various sectors throughout the country. Our team have few years experiences and we have gone through various learning processes which became the foundation for the founding of this company. ",
     desc1:
-      "Building trust and commitment is the main key for the company to work, as well as motivating the team in designing, implementing and controlling projects using various management and construction methods that have been determined.As a manifestation of a series of learning processes and company experience through providing the best goods and services in creating more real work",
+      "Building trust and commitment is the main key for the company to work, as well as motivating the team in designing, andexecuting and controlling projects using various management and construction methods We, who continue to grow and develop our organization, have a vision to be able to provide the best support and solutions for our clients so they can grow and develop together with our support.      ",
   },
 ];
 

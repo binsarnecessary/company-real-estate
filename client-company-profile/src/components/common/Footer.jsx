@@ -1,20 +1,19 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import logo from "../data/images/logo.png";
 
 const Footer = () => {
+  const handleLinkedInClick = () => {
+    // Gantilah URL berikut dengan URL profil LinkedIn Anda atau halaman yang diinginkan
+    window.open("https://www.linkedin.com/company/pt-dorma-mada-perkasa/", "_blank");
+  };
   return (
     <div className="footer py-5">
       <Container>
         <Row className="d-flex justify-content-between">
           <Col lg="5" className="d-flex flex-row align-items-start">
             <div className="company-info d-flex align-items-center">
-              <img
-                src={logo}
-                alt="Company Logo"
-                className="company-logo mr-10"
-              />
               <div className="nama text-right">
                 <h5 className="fw-bold">PT DORMA MADA PERKASA</h5>
                 <p className="desc">
@@ -32,9 +31,8 @@ const Footer = () => {
             <h5 className="fw-bold mb-3">Contact</h5>
             <div className="social " style={{ marginTop: "-10px" }}>
               <div className="text-decoration-none ">
-                <p className="m-0 ">aldolinovil@dorma.com</p>
-                <p className="mb-1 ">ervanowijanarko@dorma.com</p>
-                <p className="mb-1 ">maketing@dorma.com</p>
+                <p className="m-0">business@dorma.com</p>
+                <p className="mb-1 ">sales.marketing@dorma.com</p>
               </div>
             </div>
             <h5 className="fw-bold mb-3 " style={{ marginTop: "40px" }}>
@@ -49,6 +47,15 @@ const Footer = () => {
                     color: "white",
                     cursor: "pointer",
                   }}
+                />
+                <FaLinkedin
+                  style={{
+                    marginRight: "15px",
+                    fontSize: "30px",
+                    color: "white",
+                    cursor: "pointer",
+                  }}
+                  onClick={handleLinkedInClick}
                 />
               </div>
             </div>

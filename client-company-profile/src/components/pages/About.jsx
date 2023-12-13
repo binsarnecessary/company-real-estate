@@ -61,12 +61,12 @@ export const About = () => {
           </Col>
           <Col xs={12} lg={3} className="mt-lg-0 mt-3">
             <h6>
-            &#8226;Embracing Honesty and Professionalism for Enduring Relationships
+            &#8226;Embracing Honesty and Professionalism for Long Term Partnership 
             </h6>
           </Col>
           <Col xs={12} lg={3} className="mt-lg-0 mt-3">
             <h6>
-            &#8226;Synergizing with Diverse Stakeholders and Partners to Deliver Excellence in Service3
+            &#8226;Synergizing with Diverse Stakeholders and Partners to Deliver Excellence in Service
             </h6>
           </Col>
         </Row>
