@@ -1,10 +1,9 @@
 import React from "react";
 import { SliderContact } from "./SliderContact";
 import Esip from "../data/images/logoClient/siplah.jpeg";
-import Catalog from "../data/images/logoClient/catalogue.jpeg";
+import Catalog from "../data/images/logoClient/catalogue-removebg-preview.png";
 import Padi from "../data/images/logoClient/Umk.jpeg";
-import { Button, Col, Row } from "react-bootstrap";
-import * as Icon from "react-bootstrap-icons";
+import { Col, Row } from "react-bootstrap";
 
 export const ContactPage = () => {
   return (
@@ -25,7 +24,7 @@ export const ContactPage = () => {
         <div className="mt-3">
           <Row>
             <Col>
-              <h4 className="text-center">
+              <h4 className="text-equity">
                 Equity Tower Lantai 26 Unit H, Jalan Jendral Sudirman Senayan,
                 Kebayoran Baru Kota Adm. Jakarta Selatan, DKI Jakarta.
               </h4>
@@ -39,13 +38,16 @@ export const ContactPage = () => {
           </Row>
         </div>
 
-        <div className="d-flex justify-content-center align-items-center">
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aldolinovil@dorma.com">
-            <Button className="d-flex mt-3" variant="success">
-              <Icon.Send style={{ marginRight: "20px" }} size={30} />
-              <h4>Email Us</h4>
-            </Button>
-          </a>
+        <div className="d-flex justify-content-center align-items-center mt-4">
+          <iframe
+            className="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.1414209083714!2d106.80633342894563!3d-6.226389794431496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1505affffff%3A0x301b8a0f5d2c33ed!2sEquity%20Tower!5e0!3m2!1sen!2sid!4v1701348917358!5m2!1sen!2sid"
+            frameborder="0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+            title="Maps"
+          ></iframe>
         </div>
       </div>
 

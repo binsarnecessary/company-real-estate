@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Contact1 from "../data/images/equity.jpg";
-import Contact4 from "../data/images/sales.avif";
+// import Contact4 from "../data/images/sales.avif";
 import Contact5 from "../data/images/human-resources.jpg";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
@@ -100,58 +100,6 @@ export const SliderContact = () => {
                 <div className="card-body">
                   <h5 className="card-title fw-bold">Main Office</h5>
                   <p className="card-text text-white">muhammadansori2511@gmail.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div
-              className="card"
-              onClick={() => handleCardClick("binsarnecessary89@gmail.com")}
-            >
-              <div
-                className="card-bg"
-                style={{ backgroundImage: `url(${Contact1})` }}
-              >
-                <div className="card-body">
-                  <h5 className="card-title fw-bold">Main Office</h5>
-                  <p className="card-text text-white">
-                  binsarnecessary89@gmail.com
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div
-              className="card"
-              onClick={() => handleCardClick("sales.marketing@dorma.com")}
-            >
-              <div
-                className="card-bg"
-                style={{ backgroundImage: `url(${Contact4})` }}
-              >
-                <div className="card-body">
-                  <h5 className="card-title fw-bold">Main Office</h5>
-                  <p className="card-text text-white">
-                    sales.marketing@dorma.com
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div
-              className="card"
-              onClick={() => handleCardClick("hr@dorma.com")}
-            >
-              <div
-                className="card-bg"
-                style={{ backgroundImage: `url(${Contact5})` }}
-              >
-                <div className="card-body">
-                  <h5 className="card-title fw-bold">Main Office</h5>
-                  <p className="card-text text-white">hr@dorma.com</p>
                 </div>
               </div>
             </div>

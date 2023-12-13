@@ -60,7 +60,7 @@ export const MessagePage = (props) => {
   return (
     <>
       <div className="mt-5 pt-4 container">
-        <h2 className="fw-bold">Selamat Siang, PT Dorma!</h2>
+        <h2 className="fw-bold">Haloo, PT Dorma!</h2>
         <form ref={form} onSubmit={sendEmail}>
           <h3 style={{ color: "rgba(54, 50, 50, 0.868)", marginTop: "50px" }}>
             Tell us how we can help you

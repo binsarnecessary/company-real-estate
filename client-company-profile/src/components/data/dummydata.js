@@ -17,16 +17,34 @@ import Logo3 from "./images/logoClient/dinpend-dki.jpg";
 import Logo4 from "./images/logoClient/ibm.png";
 import Logo5 from "./images/logoClient/kementrtian-kesehanatan.png";
 import Logo6 from "./images/logoClient/kominfo.webp";
-import Logo7 from "./images/logoClient/pantarei.png";
+// import Logo7 from "./images/logoClient/pantarei.png";
 import Logo8 from "./images/logoClient/rspad-gatot.png";
 import Logo9 from "./images/logoClient/sopii.png";
 import Logo10 from "./images/logoClient/tni-ad.png";
-import Logo11 from "./images/logoClient/Umk.jpeg";
-import Logo12 from "./images/logoClient/siplah.jpeg";
-import Logo13 from "./images/logoClient/catalogue.jpeg";
+// import Logo11 from "./images/logoClient/Umk.jpeg";
+// import Logo12 from "./images/logoClient/siplah.jpeg";
+// import Logo13 from "./images/logoClient/catalogue.jpeg";
 import Logo14 from "./images/logoClient/mabesad.jpg";
 import Logo15 from "./images/logoClient/mabesal.png";
 import Logo16 from "./images/logoClient/mabesau.png";
+
+import Slider1 from "./images/logo Slider/rsud clincing.jpeg";
+import Slider2 from "./images/logo Slider/sma34-jkt.png";
+import Slider3 from "./images/logo Slider/sma6-jkt.jpg";
+import Slider4 from "./images/logo Slider/smak47-jkt.jpg";
+import Slider5 from "./images/logo Slider/sman1-jkt.png";
+import Slider6 from "./images/logo Slider/sman103-jkt.jpg";
+import Slider7 from "./images/logo Slider/sman105-jkt.jpg";
+import Slider8 from "./images/logo Slider/sman115-jkt.png";
+import Slider9 from "./images/logo Slider/sman12-jkt.png";
+import Slider10 from "./images/logo Slider/sman2-jkt.png";
+import Slider11 from "./images/logo Slider/sman37-jkt.png";
+import Slider12 from "./images/logo Slider/sman47-jkt.png";
+import Slider13 from "./images/logo Slider/sman48-jkt.png";
+import Slider14 from "./images/logo Slider/sman91-jkt.png";
+import Slider15 from "./images/logo Slider/sman93-jkt.jpg";
+import Slider16 from "./images/logo Slider/smkn-49-jakarta.webp";
+
 
 export const navlink = [
   {
@@ -177,44 +195,55 @@ export const social = [
 
 export const logoClient = [
   {
-    logo: Logo1,
+    logo: Slider1,
   },
   {
-    logo: Logo2,
+    logo: Slider2,
   },
   {
-    logo: Logo3,
+    logo: Slider3,
   },
   {
-    logo: Logo4,
+    logo: Slider4,
   },
   {
-    logo: Logo5,
+    logo: Slider5,
   },
   {
-    logo: Logo6,
+    logo: Slider6,
   },
   {
-    logo: Logo7,
+    logo: Slider7,
   },
   {
-    logo: Logo8,
+    logo: Slider8,
   },
   {
-    logo: Logo9,
+    logo: Slider9,
   },
   {
-    logo: Logo10,
+    logo: Slider10,
   },
   {
-    logo: Logo11
+    logo: Slider11,
   },
   {
-    logo: Logo12,
+    logo: Slider12,
   },
   {
-    logo: Logo13,
+    logo: Slider13,
   },
+  {
+    logo: Slider14,
+  },
+  {
+    logo: Slider15,
+  },
+  {
+    logo: Slider16,
+  }
+
+
 ];
 
 export const logoClientNotSlider = [
@@ -237,10 +266,10 @@ export const logoClientNotSlider = [
     logo: Logo6,
   },
   {
-    logo: Logo8,
+    logo: Logo9,
   },
   {
-    logo: Logo9,
+    logo: Logo8,
   },
   {
     logo: Logo10,

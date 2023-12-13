@@ -38,7 +38,7 @@ export const EmailPage = (props) => {
   return (
     <>
       <div className="mt-5 pt-4 container">
-        <h2 className="fw-bold">Selamat Siang, PT Dorma!</h2>
+        <h2 className="fw-bold">Halooo, PT Dorma!</h2>
         <form>
           <Row className="mt-4">
             <Col lg={3} xs={12}>
