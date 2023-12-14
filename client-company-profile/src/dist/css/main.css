@@ -576,7 +576,7 @@ nav ul li a:hover::before {
     width: 250px;
   }
   .card{
-    width: 40vh;
+    align-items: center;
   }
   .our-services {
     padding-top: 50vh;

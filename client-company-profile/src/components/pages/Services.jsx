@@ -19,7 +19,7 @@ export const Services = () => {
           <Row className="justify-content-center no-gutters mx-auto">
             {" "}
             {/* Menambahkan justify-content-center */}
-            <Col lg={4} xs={12}>
+            <Col lg={4} xs={12} className="mt-lg-0 mt-5">
               <a href="/services/mechanical-services">
                 <div className="card">
                   <img
