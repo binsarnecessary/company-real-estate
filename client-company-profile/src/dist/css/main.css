@@ -339,7 +339,6 @@ nav ul li a:hover::before {
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      color: white;
       font-weight: bold; /* Mengganti font-style menjadi font-weight */
     }
   }

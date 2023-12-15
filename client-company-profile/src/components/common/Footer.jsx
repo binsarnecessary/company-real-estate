@@ -4,10 +4,11 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import logo from "../data/images/logo.png";
 
 const Footer = () => {
-  const handleLinkedInClick = () => {
-    // Gantilah URL berikut dengan URL profil LinkedIn Anda atau halaman yang diinginkan
-    window.open("https://www.linkedin.com/company/pt-dorma-mada-perkasa/", "_blank");
+  // Fungsi untuk menangani klik pada ikon media sosial
+  const handleSocialMediaClick = (url) => {
+    window.open(url, "_blank");
   };
+
   return (
     <div className="footer py-5">
       <Container>
@@ -28,7 +29,7 @@ const Footer = () => {
             </div>
           </Col>
           <Col lg="4" className="mt-lg-0 mt-5 mb-1 mt-4">
-            <h5 className="fw-bold mb-3">Contact</h5>
+            <h5 className="fw-bold mb-3">Kontak</h5>
             <div className="social " style={{ marginTop: "-10px" }}>
               <div className="text-decoration-none ">
                 <p className="m-0">business@dorma.com</p>
@@ -36,7 +37,7 @@ const Footer = () => {
               </div>
             </div>
             <h5 className="fw-bold mb-3 " style={{ marginTop: "40px" }}>
-              Social 
+              Sosial Media
             </h5>
             <div className="social-media mt-3">
               <div className="acont text-decoration-none">
@@ -47,6 +48,11 @@ const Footer = () => {
                     color: "white",
                     cursor: "pointer",
                   }}
+                  onClick={() =>
+                    handleSocialMediaClick(
+                      "https://www.instagram.com/dormamadaperkasa/"
+                    )
+                  }
                 />
                 <FaLinkedin
                   style={{
@@ -55,7 +61,11 @@ const Footer = () => {
                     color: "white",
                     cursor: "pointer",
                   }}
-                  onClick={handleLinkedInClick}
+                  onClick={() =>
+                    handleSocialMediaClick(
+                      "https://www.linkedin.com/company/pt-dorma-mada-perkasa/"
+                    )
+                  }
                 />
               </div>
             </div>
@@ -74,7 +84,7 @@ const Footer = () => {
               className="text-center px-md-0 px-3"
               style={{ fontSize: "small", marginTop: "10px" }}
             >
-              &copy; Copyright {new Date().getFullYear()} by{" "}
+              &copy; Hak Cipta {new Date().getFullYear()} oleh{" "}
               <span className="fw-bold">PT DORMA MADA PERKASA</span>
             </p>
           </Col>

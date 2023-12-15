@@ -37,10 +37,10 @@ export default function Sidebar(props) {
         </ul>
 
         <div className="contact-sidebar text-decoration-none">
-          <a href="/">
+          <a href="https://www.instagram.com/dormamadaperkasa/">
             <Icon.Instagram />
           </a>
-          <a href="https://www.linkedin.com/company/pt-dorma-mada-perkasa/about/">
+          <a href="https://www.linkedin.com/company/pt-dorma-mada-perkasa/">
             <Icon.Linkedin />
           </a>
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aldolinovil@dorma.com">
