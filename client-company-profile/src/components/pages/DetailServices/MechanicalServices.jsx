@@ -121,10 +121,7 @@ export const MechanicalServices = () => {
       <div className="mt-5 pt-4">
         <OurWorks />
       </div>
-
-      <div className="mb-5 pb-4">
         <Imagecontruksi />
-      </div>
     </>
   );
 };

@@ -322,9 +322,7 @@ nav ul li a:hover::before {
 
     &:hover {
       transform: scale(1.05);
-      .card-background {
-        opacity: 0.2;
-      }
+
     }
 
     .card-background {

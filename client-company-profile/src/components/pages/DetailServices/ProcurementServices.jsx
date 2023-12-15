@@ -3,28 +3,8 @@ import React from "react";
 import { Col, Image, Row,Button } from "react-bootstrap";
 import { OurWorks } from "../OurWorks";
 
-import Bg1 from "../../data/images/ourwork/supply/1.jpg"
-import Bg2 from "../../data/images/ourwork/supply/2.jpg"
-import Bg3 from "../../data/images/ourwork/supply/3.jpeg"
-import Bg4 from "../../data/images/ourwork/supply/4.jpg"
-import Bg5 from "../../data/images/ourwork/supply/5.jpg"
-import Bg6 from "../../data/images/ourwork/supply/6.jpeg"
-import Bg7 from "../../data/images/ourwork/supply/7.jpeg"
-import Bg8 from "../../data/images/ourwork/supply/8.jpeg"
-import Bg9 from "../../data/images/ourwork/supply/9.jpeg"
-import Bg10 from "../../data/images/ourwork/supply/10.jpeg"
-import Bg11 from "../../data/images/ourwork/supply/11.jpg"
-import Bg12 from "../../data/images/ourwork/supply/12.jpg"
-import Bg13 from "../../data/images/ourwork/supply/13.jpeg"
-import Bg14 from "../../data/images/ourwork/supply/14.jpeg"
-import Bg15 from "../../data/images/ourwork/supply/15.jpg"
-import Bg16 from "../../data/images/ourwork/supply/16.jpeg"
-import Bg17 from "../../data/images/ourwork/supply/17.jpeg"
-import Bg18 from "../../data/images/ourwork/supply/18.jpg"
-import Bg19 from "../../data/images/ourwork/supply/19.jpg"
-import Bg20 from "../../data/images/ourwork/supply/20.jpg"
-
 import Picture from "../../data/images/procurement-content.jpg";
+import Supplay from "./Supplay";
 
 export const ProcurementServices = () => {
   return (
@@ -95,29 +75,7 @@ export const ProcurementServices = () => {
       <div claassName="mt-5">
         <OurWorks />
       </div>
-
-      <div className="Galery">
-      <Image src={Bg1} alt="" />
-      <Image src={Bg2} alt="" />
-      <Image src={Bg3} alt="" />
-      <Image src={Bg4} alt="" />
-      <Image src={Bg5} alt="" />
-      <Image src={Bg6} alt="" />
-      <Image src={Bg7} alt="" />
-      <Image src={Bg8} alt="" />
-      <Image src={Bg9} alt="" />
-      <Image src={Bg10} alt="" />
-      <Image src={Bg11} alt="" />
-      <Image src={Bg12} alt="" />
-      <Image src={Bg13} alt="" />
-      <Image src={Bg14} alt="" />
-      <Image src={Bg15} alt="" />
-      <Image src={Bg16} alt="" />
-      <Image src={Bg17} alt="" />
-      <Image src={Bg18} alt="" />
-      <Image src={Bg19} alt="" />
-      <Image src={Bg20} alt="" />
-      </div>
+      <Supplay/>
     </>
   );
 };

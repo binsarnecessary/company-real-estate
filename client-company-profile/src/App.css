@@ -287,19 +287,21 @@ video {
 
 /*out work mecanical*/
 .image-container {
-  display: flex;
-  gap: 10px; /* Jarak antar gambar */
-  justify-content: center;
-  margin-top: -5vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 kolom */
+  margin: 100px; /* Sesuaikan jarak sesuai kebutuhan */
+  align-items: center;
+  margin-top: -6vh;
 }
 
 .gallery-image {
-  width: 200px; /* Sesuaikan lebar gambar */
-  height: auto;
+  width: 30vh; /* Gambar mengambil lebar penuh dari setiap sel kolom */
+  height: 30vh; /* Gambar mengambil tinggi penuh dari setiap sel kolom */
+  object-fit: cover; /* Membuat gambar tetap seimbang di dalam sel */
   cursor: pointer;
+  margin: 15px;
   transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); /* Animasi zoom out */
 }
-
 .gallery-image:hover {
   transform: scale(1.1); /* Gambar menjadi 110% dari ukuran normal saat hover */
 }
