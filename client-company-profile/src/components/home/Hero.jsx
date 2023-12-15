@@ -13,12 +13,12 @@ export const Hero = () => {
           QUALITY IN EVERY PROJECT
           </h1>
           <p data-aos='fade-left'></p>
-          <button className='primaryBtn' data-aos='fade-up-right'>
-            <a href='/services' style={{color:'white',  textDecoration: 'none' }}>Our Work</a>
-          </button>
-          <button className='primaryBtn1' data-aos='fade-up-left'>
-            <a href='/contact' style={{color:'white',  textDecoration: 'none' }}>Contact</a>
-          </button>
+            <a href='/services' style={{ textDecoration: 'none' }}>
+            <button className='primaryBtn' data-aos='fade-up-right'>Our Work</button>
+            </a>
+            <a href='/contact' style={{  textDecoration: 'none' }}>
+            <button className='primaryBtn1' data-aos='fade-up-left'>Contact</button>
+            </a>
         </div>
       ))}
       </div>

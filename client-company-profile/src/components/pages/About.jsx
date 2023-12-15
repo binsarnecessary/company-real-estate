@@ -51,22 +51,22 @@ export const About = () => {
           </Col>
           <Col xs={12} lg={2} className="mt-lg-0 mt-3">
             <h6 > 
-            &#8226;Unveiling the Most Effective and Modern Ideas
+            &#8226; Unveiling the Most <span style={{marginLeft:'2vh'}}>Effective and <span style={{marginLeft:'2vh'}}> Modern Ideas</span></span> 
             </h6>
           </Col>
           <Col xs={12} lg={2} className="mt-lg-0 mt-3">
             <h6>
-            &#8226;Offering Pinnacle-Quality Equipment at Competitive Prices
+            &#8226;<span style={{marginLeft:'0.7vh'}}>Offering Pinnacle-</span> <span style={{marginLeft:'2vh'}}>Quality Equipment <span style={{marginLeft:'2vh'}}>at Competitive <span style={{marginLeft:'2vh'}}> Prices </span></span></span>
             </h6>
           </Col>
-          <Col xs={12} lg={3} className="mt-lg-0 mt-3">
-            <h6>
-            &#8226;Embracing Honesty and Professionalism for Long Term Partnership 
+          <Col xs={12} lg={3} className="text2 mt-lg-0 mt-3">
+            <h6 style={{marginLeft:'1vh'}}>
+            &#8226;<span style={{marginLeft:'1vh'}}>Embracing Honesty and <span style={{marginLeft:'2vh'}}>Professionalism for Long Term <span style={{marginLeft:'2vh'}}>Partnership</span></span> </span>
             </h6>
           </Col>
-          <Col xs={12} lg={3} className="mt-lg-0 mt-3">
-            <h6>
-            &#8226;Synergizing with Diverse Stakeholders and Partners to Deliver Excellence in Service
+          <Col xs={12} lg={3} className=" text2 mt-lg-0 mt-3">
+            <h6 style={{marginLeft:'1vh'}}>
+            &#8226;<span style={{marginLeft:'1vh'}}>Synergizing with Diverse <span style={{marginLeft:'2vh'}}>Stakeholders and Partners to <span style={{marginLeft:'2vh'}}>Deliver Excellence in Service</span></span> </span>
             </h6>
           </Col>
         </Row>

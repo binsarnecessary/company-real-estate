@@ -71,20 +71,20 @@ h6 {
   padding: 15px 50px;
   margin-top: -70vh;
   cursor: pointer;
-  background: none;
-  color: white;
+  background: none; 
+  color:white; 
   transition: background-color 0.3s, color 0.3s;
   text-decoration: none; /* Jangan letakkan textDecoration di dalam style atribut pada tombol */
 }
 
 .primaryBtn:hover {
-  background-color: rgb(0, 0, 0);
-  color: black;
+  background-color: rgb(255, 255, 255); /* Warna latar belakang hitam saat dihover */
+  color:black; /* Warna teks putih saat dihover */
 }
 
 .primaryBtn1:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255); /* Warna latar belakang hitam saat dihover */
+  color:black; /* Warna teks putih saat dihover */
 }
 
 .heroContent h1 {
@@ -280,27 +280,53 @@ video {
 }
 
 /*out work mecanical*/
-.Galery {
+.image-container {
   display: flex;
-  flex-wrap: wrap;
-  margin: 10px 50px;
+  gap: 10px; /* Jarak antar gambar */
+  justify-content: center;
+  margin-top: -5vh;
 }
 
-.Galery img {
-  width: 230px; /* Ganti dengan lebar yang diinginkan */
-  padding: 5px;
-  height: auto; /* Menjaga aspek rasio gambar */
-  transition: transform 0.3s ease-in-out;
+.gallery-image {
+  width: 200px; /* Sesuaikan lebar gambar */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); /* Animasi zoom out */
 }
 
-.Galery img:hover {
-  transform: scale(1.1) translateX(10px);
+.gallery-image:hover {
+  transform: scale(1.1); /* Gambar menjadi 110% dari ukuran normal saat hover */
 }
+.gallery-modal .modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-modal .modal-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-body img {
+  max-width: 100%; /* Maksimum lebar gambar sesuai dengan lebar modal */
+  max-height: 70vh; /* Atur tinggi maksimum sesuai kebutuhan */
+  object-fit: contain; /* Sesuaikan untuk mempertahankan aspek rasio gambar */
+}
+
+.modal-footer .btn {
+  flex-grow: 0; /* Biarkan tombol tidak membesar secara proporsional */
+}
+
 
 /*Service Responsive*/
 @media (max-width: 767px) {
   .image-service{
     margin-left: -3vh;
+  }
+  .image-container {
+    flex-direction: column;
+    align-items: center; /* Tengahkan saat di mode kolom */
   }
 
   .col-lg-4 {

@@ -439,8 +439,8 @@ nav ul li a:hover::before {
   height: 250px; /* You can adjust the initial height as needed */
 }
 
-.text-equity {
-  text-align: justify;
+.text-equity h8{
+  text-align: center;
 }
 
 
@@ -464,6 +464,9 @@ nav ul li a:hover::before {
 
   .about-our-vision {
     margin-top: 50vh;
+  }
+  .about-our-mission .text2{
+    margin-left: -1vh;
   }
 
   .contact-page {
