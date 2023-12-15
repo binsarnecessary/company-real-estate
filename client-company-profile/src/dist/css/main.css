@@ -244,7 +244,7 @@ nav ul li a:hover::before {
 
 .slider-logo .logos-slide {
   display: inline-block;
-  animation: 60s slide infinite linear;
+  animation: 1200s slide infinite linear;
 }
 
 .slider-logo .logos-slide img {

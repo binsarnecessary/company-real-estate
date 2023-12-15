@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { Modal, Image, Button } from 'react-bootstrap';
+import React, { useState } from "react";
+import { Modal, Image, Button } from "react-bootstrap";
 
-import Bg1 from '../../data/images/ourwork/mecanical/1.jpg';
-import Bg2 from '../../data/images/ourwork/mecanical/2.jpg';
-import Bg3 from '../../data/images/ourwork/mecanical/3.jpg';
-import Bg4 from '../../data/images/ourwork/mecanical/4.jpg';
-import Bg5 from '../../data/images/ourwork/mecanical/5.jpg';
+import Bg1 from "../../data/images/ourwork/mecanical/1.jpg";
+import Bg2 from "../../data/images/ourwork/mecanical/2.jpg";
+import Bg3 from "../../data/images/ourwork/mecanical/3.jpg";
+import Bg4 from "../../data/images/ourwork/mecanical/4.jpg";
+import Bg5 from "../../data/images/ourwork/mecanical/5.jpg";
 
 const Imagecontruksi = () => {
   const [show, setShow] = useState(false);
-  const [selectedImage, setSelectedImage] = useState('');
+  const [selectedImage, setSelectedImage] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleImageClick = (image, index) => {
@@ -20,25 +20,13 @@ const Imagecontruksi = () => {
 
   const handleNextImage = () => {
     const newIndex = (currentIndex + 1) % 5; // 5 is the total number of images
-    setSelectedImage([
-      Bg1,
-      Bg2,
-      Bg3,
-      Bg4,
-      Bg5
-    ][newIndex]);
+    setSelectedImage([Bg1, Bg2, Bg3, Bg4, Bg5][newIndex]);
     setCurrentIndex(newIndex);
   };
 
   const handlePrevImage = () => {
     const newIndex = (currentIndex - 1 + 5) % 5; // 5 is the total number of images
-    setSelectedImage([
-      Bg1,
-      Bg2,
-      Bg3,
-      Bg4,
-      Bg5
-    ][newIndex]);
+    setSelectedImage([Bg1, Bg2, Bg3, Bg4, Bg5][newIndex]);
     setCurrentIndex(newIndex);
   };
 
@@ -55,11 +43,11 @@ const Imagecontruksi = () => {
     <div className="Gallery">
       <div className="image-container">
         {[
-          { src: Bg1, alt: 'Image 1' },
-          { src: Bg2, alt: 'Image 2' },
-          { src: Bg3, alt: 'Image 3' },
-          { src: Bg4, alt: 'Image 4' },
-          { src: Bg5, alt: 'Image 5' },
+          { src: Bg1, alt: "Image 1" },
+          { src: Bg2, alt: "Image 2" },
+          { src: Bg3, alt: "Image 3" },
+          { src: Bg4, alt: "Image 4" },
+          { src: Bg5, alt: "Image 5" },
         ].map((image, index) => (
           <Image
             key={index}
@@ -72,12 +60,34 @@ const Imagecontruksi = () => {
       </div>
 
       {/* Modal */}
-      <Modal show={show} onHide={handleClose} className="gallery-modal" onKeyDown={handleKeyPress} tabIndex="0">
+      <Modal
+        show={show}
+        onHide={handleClose}
+        className="gallery-modal"
+        onKeyDown={handleKeyPress}
+        tabIndex="0"
+        dialogClassName="modal-dialog-custom"
+        centered
+      >
+        <div className="overlay" onClick={handleClose}></div>
         <Modal.Body>
           <Image src={selectedImage} alt="Selected Image" fluid />
-          <Button variant="primary" onClick={handleNextImage}>
-            {'>'}
-          </Button>
+          <div className="modal-buttons-container">
+            <Button
+              variant="transparent"
+              onClick={handlePrevImage}
+              className="modal-button"
+            >
+              {"<"}
+            </Button>
+            <Button
+              variant="transparent"
+              onClick={handleNextImage}
+              className="modal-button"
+            >
+              {">"}
+            </Button>
+          </div>
         </Modal.Body>
       </Modal>
       <div></div>
