@@ -386,10 +386,26 @@ video {
     margin-left: -3vh;
   }
   .image-container {
-    flex-direction: column;
-    align-items: center; /* Tengahkan saat di mode kolom */
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    margin: 15px;
+    margin-top: -3vh;
+    margin-left: 5vh;
+  }
+  .textmecanical{
+    margin-left: 50vh;
   }
 
+  .gallery-image {
+    height: auto;
+  }
+
+  .gallery-modal .modal-buttons-container {
+    padding: 10px;
+  }
+
+  .modal-buttons-container .modal-button {
+    font-size: large;
+  }
   .col-lg-4 {
     flex: 0 0 100%;
     max-width: 100%;

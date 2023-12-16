@@ -23,14 +23,16 @@ export const ContactPage = () => {
         <h2 className="fw-bold text-center">Our Office</h2>
         <div style={{marginTop:'10vh'}}>
           <Row>
-            <Col style={{textAlign:'justify'}}>
+            <Col lg={5} xs={12} style={{textAlign:'justify'}}>
               <h7 className="text-center">
                 Equity Tower Lantai 26 Unit H, Jalan Jendral Sudirman Senayan,
                 Kebayoran Baru Kota Adm. Jakarta Selatan, DKI Jakarta.
               </h7>
             </Col>
-            <Col className=" mt-lg-0 mt-4" style={{textAlign:'justify',marginLeft:'20vh'}}>
-              <h7 className="text-center">
+            <Col lg={2} xs={12}>
+            </Col>
+            <Col lg={5} xs={12} className=" mt-lg-0 mt-4" style={{textAlign:'justify'}}>
+              <h7 className=" text-center">
                 Jl.Pejaten Raya No.12A,Pejaten barat., Ps.Minggu,Kota Jakarta
                 Slatan,DKI Jakarta.
               </h7>

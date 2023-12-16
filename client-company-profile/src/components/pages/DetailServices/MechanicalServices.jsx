@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Image, Row, Button } from "react-bootstrap";
 import { OurWorks } from "../OurWorks";
 
-import Picture from "../../data/images/mechanical-col.jpeg";
+import Picture from "../../data/images/mechanical-services.jpg";
 import Imagecontruksi from "./Imagecontruksi";
 
 export const MechanicalServices = () => {

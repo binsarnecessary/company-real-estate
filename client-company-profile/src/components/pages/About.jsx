@@ -51,12 +51,12 @@ export const About = () => {
           </Col>
           <Col xs={12} lg={2} className="mt-lg-0 mt-3">
             <h6 > 
-            &#8226; Unveiling the Most <span style={{marginLeft:'2vh'}}>Effective and <span style={{marginLeft:'2vh'}}> Modern Ideas</span></span> 
+            &#8226; Unveiling the Most <span className="textmecanical" style={{marginLeft:'2.5vh'}}>Effective <span style={{marginLeft:'2.5vh'}}>and <span style={{marginLeft:'2vh'}}>Modern Ideas</span></span></span> 
             </h6>
           </Col>
           <Col xs={12} lg={2} className="mt-lg-0 mt-3">
             <h6>
-            &#8226;<span style={{marginLeft:'0.7vh'}}>Offering Pinnacle-</span> <span style={{marginLeft:'2vh'}}>Quality Equipment <span style={{marginLeft:'2vh'}}>at Competitive <span style={{marginLeft:'2vh'}}> Prices </span></span></span>
+            &#8226;<span style={{marginLeft:'0.7vh'}}>Offering Pinnacle-</span> <span style={{marginLeft:'2vh'}}>Quality <span className="textabout">Equipment</span>  <span style={{marginLeft:'2vh'}}>at Competitive <span style={{marginLeft:'2vh'}}> Prices </span></span></span>
             </h6>
           </Col>
           <Col xs={12} lg={3} className="text2 mt-lg-0 mt-3">

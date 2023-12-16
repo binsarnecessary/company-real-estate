@@ -349,11 +349,12 @@ nav ul li a:hover::before {
 .mechanical-services {
   padding-top: 35%;
   background: linear-gradient(rgba(56, 56, 56, 0.726), rgba(59, 53, 53, 0.699)),
-    url(../../components/data/images/mechanical-services.png);
+    url(../../components/data/images/mechanical-col.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 
 .mechanical-services .title-mechanical {
   margin-top: -100px; /* Adjust the negative margin based on your preference */
@@ -543,7 +544,9 @@ nav ul li a:hover::before {
   .mechanical-services {
     padding-top: 70%;
   }
-
+  .image-service{
+    width: 10vh;
+  }
   .mechanical-services .title-mechanical {
     margin-top: -80px; /* Adjust the negative margin based on your preference */
   }
@@ -599,7 +602,6 @@ nav ul li a:hover::before {
   .maps {
     height: 200px; /* Adjust the height for smaller screens */
   }
-
   .text-equity {
     text-align: center;
   }
@@ -607,6 +609,9 @@ nav ul li a:hover::before {
   .card-container {
     overflow-x: hidden;
     padding-left: 10px;
+  }
+  .textabout{
+    margin-left: 15px;
   }
 
 }
