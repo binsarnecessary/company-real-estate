@@ -73,7 +73,7 @@ export const SliderContact = () => {
           <div>
             <div
               className="card"
-              onClick={() => handleCardClick("aldolinovil2022@gmail.com")}
+              onClick={() => handleCardClick("business@dorma.com")}
             >
               <div
                 className="card-bg"
@@ -82,7 +82,7 @@ export const SliderContact = () => {
                 <div className="card-body">
                   <h5 className="card-title fw-bold">Main Office</h5>
                   <p className="card-text text-white">
-                  aldolinovil2022@gmail.com
+                  business@dorma.com
                   </p>
                 </div>
               </div>
@@ -91,15 +91,15 @@ export const SliderContact = () => {
           <div>
             <div
               className="card"
-              onClick={() => handleCardClick("muhammadansori2511@gmail.com")}
+              onClick={() => handleCardClick("sales.marketing@dorma.com")}
             >
               <div
                 className="card-bg"
                 style={{ backgroundImage: `url(${Contact5})` }}
               >
                 <div className="card-body">
-                  <h5 className="card-title fw-bold">Main Office</h5>
-                  <p className="card-text text-white">muhammadansori2511@gmail.com</p>
+                  <h5 className="card-title fw-bold">Marketing</h5>
+                  <p className="card-text text-white">sales.marketing@dorma.com</p>
                 </div>
               </div>
             </div>
