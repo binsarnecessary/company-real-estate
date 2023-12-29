@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
           </Col>
           <Col lg="4" className="mt-lg-0 mt-5 mb-1 mt-4">
-            <h5 className="fw-bold mb-3">Kontak</h5>
+            <h5 className="fw-bold mb-3">Contact</h5>
             <div className="social " style={{ marginTop: "-10px" }}>
               <div className="text-decoration-none ">
                 <p className="m-0">business@dorma.com</p>
