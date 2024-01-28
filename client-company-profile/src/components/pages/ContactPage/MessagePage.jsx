@@ -29,10 +29,10 @@ export const MessagePage = (props) => {
 
     emailjs
       .sendForm(
-        "service_pgs31ns",
-        "template_vxmp59t",
+        "service_qh631qj",
+        "template_zl4zexq",
         form.current,
-        "zCFH66PEAE7FCe5VO"
+        "dM11awLHq0aIR4OpF"
       )
       .then(
         (result) => {
