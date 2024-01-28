@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
-import logo from "../data/images/logo.png";
+// import logo from "../data/images/logo.png";
 
 const Footer = () => {
   // Fungsi untuk menangani klik pada ikon media sosial
@@ -30,7 +30,7 @@ const Footer = () => {
           </Col>
           <Col lg="4" className="mt-lg-0 mt-5 mb-1 mt-4">
             <h5 className="fw-bold mb-3">Contact</h5>
-            <div className="social " style={{ marginTop: "-10px" }}>
+            <div className="social" style={{ marginTop: "-10px" }}>
               <div className="text-decoration-none ">
                 <p className="m-0">business@dorma.com</p>
                 <p className="mb-1 ">sales.marketing@dorma.com</p>
